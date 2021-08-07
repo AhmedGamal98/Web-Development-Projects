@@ -1,0 +1,1013 @@
+/* Start Main Roles */
+body{
+	
+	
+	font-family: Athelas 
+	
+}
+.astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 20px;
+	top: 8px;
+	color: #D20707
+		
+}
+.modal .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 55px;
+	top: 233px;
+	color: #D20707
+		
+}
+.signup-page-main .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	color: #D20707
+		
+}
+.idea .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: -140px;
+	top: 3px;
+	color: #D20707
+		
+}
+.ast{
+	
+	position: relative
+}
+.alert-danger,
+.alert-success{
+	
+	padding: 6px;
+	display: none
+	
+}
+.ast .show-pass{
+	
+	position: absolute;
+	top: 10px;    /*    6px     */
+	right: 37px; /*  -30px  */
+	color: #888;
+	font-size: 20px;
+	cursor: pointer
+}
+.signup-page-main .ast .show-pass{
+	
+	position: absolute;
+	top: 8px;    /*    6px     */
+	right: 37px; /*  -30px  */
+	color: #888;
+	font-size: 18px;
+	cursor: pointer
+}
+/* End Main Roles */
+/* Start Apper Bar 
+
+.abber-bar{
+	
+	
+	background-color: #D9D9D9
+	
+}
+.abber-bar .login{
+	
+	margin-top: 50px
+	
+}
+.abber-bar .login .btn-primary{
+	
+	margin-right: 10px
+	
+}
+.abber-bar .links{
+	
+	margin-top: 60px
+	
+}
+.abber-bar .links ul{
+	
+	display: inline-flex;
+	font-weight: bold;
+	font-size: 20px;
+	padding-right: 10px
+	
+}
+.abber-bar .links ul li{
+	
+	margin-right: 30px
+	
+}
+.abber-bar .links ul li a{
+	
+	text-decoration: none
+}
+.abber-bar .links ul li.active a,
+.abber-bar .links ul li a:hover{
+	
+	color: #333
+	
+}*/
+/* Start Navbar */
+.navbar{
+	
+	margin-bottom: 0;
+	height: 100px;
+	background-color: #D9D9D9
+	
+}
+.navbar .nav{
+	
+	margin-top: 25px
+	
+}
+.nav .active{
+	
+	font-weight: bold;
+	color: #337AB7
+	
+}
+.navbar .nav-search{
+	
+	margin-top: 70px
+}
+.navbar .nav-search input[type="text"]{
+	
+	width: 250px
+}
+.nav .btn-primary{
+	
+	margin-right: 20px
+	
+}
+.navbar .login a{
+	
+	color: #FFF
+}
+/* End Navbar */
+/* End Apper Bar */
+/* Start Header */
+
+.car .carousel-inner .item img{
+	
+	width: 100%;
+	height: 350px
+	
+}
+.carousel .carousel-inner .item .text{
+	
+	font-weight: bold;
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 70px;
+	text-align: center
+	
+}
+
+/* End Header */
+/* Start Creative Ideas */
+
+.ideas{
+	
+	margin-top: 50px
+}
+.ideas h3{
+	
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px
+}
+.ideas .thumbnail .caption{
+	
+	text-align: center
+	
+}
+.ideas .see .btn-primary{
+	
+	width: 200px
+}
+.ideass .recommended .btn-primary{
+	
+	width: 200px
+}
+.ideas .see{
+	
+	text-align: center;
+	margin: auto
+	
+}
+.ideass .recommended{
+	
+	text-align: center;
+	margin: auto
+	
+}
+.ideas .hide{
+	
+	display: none
+}
+.ideass .recommend{
+	
+	
+	font-size: 17px;
+	font-weight: bold;
+	color: #CCC;
+	margin-bottom: 20px;
+	text-align: center
+	
+}
+/* End Creative Ideas */
+/* Start Project */
+.start-idea{
+	
+	margin-top: 60px
+	
+}
+.start-idea .search-investors{
+	
+	margin: auto;
+	text-align: center
+	
+}
+.start-idea .search-investors h3{
+	
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #e3e3e3
+	
+}
+.start-idea .search-investors p{
+	
+	font-size: 17px;
+	font-weight: bold;
+	color: #CCC;
+	margin-bottom: 10px
+	
+}
+.start-idea .search-investors input[type="text"]{
+	
+	width: 350px;
+	margin: auto
+}
+.start-idea .search-investors input[type="submit"]{
+	
+	margin-top: 25px
+}
+.start-idea .start-project{
+	
+	text-align: center
+}
+.start-idea .start-project h3{
+	
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #e3e3e3
+}
+.start-idea .start-project p{
+	
+	font-size: 17px;
+	font-weight: bold;
+	color: #CCC;
+	margin-bottom: 20px
+	
+}
+.start-idea .start-project .btn-primary{
+	
+	margin-top: 35px;
+	padding: 10px 30px
+	
+}
+/* End Project */
+/* Start Help */
+
+.contact{
+	
+	margin-top: 30px
+}
+.contact .con h3{
+	
+	font-weight: bold;
+	font-size: 23px;
+	color: #515A5A;
+	margin-bottom: 20px
+	
+}
+.contact .con p{
+	
+	font-weight: bold;
+	color: #FFF;
+	font-size: 17px;
+	
+	
+}
+.contact .con p i{
+	
+	color: #515A5A;
+}
+/* End Help */
+/* Start Footer */
+.footer{
+	
+	background-color: #CCC;
+	color: #FFF;
+	margin-top: 60px;
+	height: 280px
+}
+.footer .copy{
+	
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 40px
+}
+.footer .copy span{
+	
+	color: #515A5A;
+}
+.footer ul{
+	
+	display: inline-flex;
+	margin-top: 40px
+}
+.footer ul li{
+	
+	margin-right: 20px;
+	width: 30px;
+	height: 30px
+}
+.footer ul li a{
+	
+	
+	color: #FFF;
+	text-decoration: none
+}
+.footer ul li a i{
+	
+	font-size: 19px
+	
+}
+.facebook{
+    color: #FBCAA2;
+}
+.twitter{
+    color: #FBCAA2;
+}
+.google-plus{
+	color: #FBCAA2;
+}
+.linkedin{
+	color: #FBCAA2;
+}
+/* End Footer */
+
+
+/* Start About us Page */
+
+.about-us{
+	
+	margin-top: 70px
+}
+.about-us .col-md-6,
+.about-us .col-md-12{
+	
+	height: 250px;
+	width: 500px
+	
+}
+.about-us h2{
+	
+	font-weight: bold;
+	color: #E7C9AE;
+	margin-bottom: 20px
+}
+.about-us p{
+	
+	color: #CCC;
+	font-size: 17px;
+	line-height: 1.2
+}
+/* End About Us Page */
+/* Start Contact Us */
+.contact-us h2{
+	
+	font-weight: bold;
+	font-family: cursive;
+	color: #E7C9AE;
+	margin-top: 40px
+	
+}
+.contact-us .form{
+	
+	margin-top: 40px
+	
+}
+.contact-us .form input[type="text"],
+.contact-us .form input[type="email"]{
+	
+	height: 50px;
+	width: 500px
+	
+	
+}
+.contact-us .form input[type="submit"]{
+	
+	margin-left: 160px
+	
+	
+}
+.contact-us .form textarea{
+	
+	width: 500px;
+	height: 230px;
+	resize: none
+	
+}
+.contact-us .form .btn-primary{
+	
+	width: 150px;
+	background-color: #E7C9AE;
+	color: #000;
+	border: none
+	
+}
+.contact-us .info{
+	
+	margin-top: 100px
+	
+}
+.contact-us .info p{
+	
+	font-weight: bold;
+	font-size: 18px
+	
+}
+.contact-us .info p i{
+	
+	font-size: 20px;
+	color: #E7C9AE;
+	margin-right: 15px
+	
+}
+.contact-us .info ul{
+	
+	display: inline-flex;
+	margin-left: 50px;
+	margin-top: 20px
+	
+}
+.contact-us .info hr{
+	
+	border-bottom: 3px solid #CCC
+	
+}
+.contact-us .info ul li{
+	
+	margin-right: 20px
+}
+.contact-us .info ul li a{
+	
+	font-size: 18px
+}
+.contact-us .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 175px;
+	top: 8px;
+	color: #D20707
+		
+}
+/* End Contact Us */
+/* Start Investors Filtering Page */
+
+.filtering{
+	
+	margin-top: 40px
+}
+.investors{
+	
+	margin-top: 50px
+}
+.investors h3{
+	
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px
+}
+.investors .thumbnail .caption{
+	
+	text-align: center
+	
+}
+.investors p.show{
+	
+	margin: auto
+		
+}
+.investors .thumbnail .caption h3{
+	
+	color: #515A5A
+}
+.investors .thumbnail .caption p{
+	
+	font-size: 15px;
+	color: #CCC;
+	margin-bottom: 10px
+}
+.investors .thumbnail .caption .budget{
+	
+	font-weight: bold;
+	font-size: 16px;
+	color: #515A5A
+	
+}
+.investors .thumbnail .caption p i{
+	
+	color: #BB672D
+}
+.investors .thumbnail .caption .budget span{
+	
+	color: #BB672D
+	
+}
+.investors .thumbnail .caption .btn-primary{
+	
+	background-color: #FFF;
+	color: #B75E21;
+	border: 1px solid #FAD7A0
+}
+.investors .show .btn-primary{
+	
+	width: 200px
+}
+/* End Investots Filtering Page */
+/* Start Ideas Filtering Page */
+
+.ideas{
+	
+	margin-top: 50px
+}
+.ideas h3{
+	
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px
+}
+.ideas .thumbnail .caption{
+	
+	text-align: center
+	
+}
+.ideas p.show{
+	
+	margin: auto
+		
+}
+.ideas .thumbnail .caption h3{
+	
+	color: #515A5A
+}
+.ideas .thumbnail .caption p{
+	
+	font-size: 15px;
+	color: #CCC;
+	margin-bottom: 10px
+}
+.ideas .thumbnail .caption .budget{
+	
+	font-weight: bold;
+	font-size: 16px;
+	color: #515A5A
+	
+}
+.ideas .thumbnail .caption p i{
+	
+	color: #BB672D
+}
+.ideas .thumbnail .caption .budget span{
+	
+	color: #BB672D
+	
+}
+.ideas .thumbnail .caption .btn-primary{
+	
+	background-color: #FFF;
+	color: #B75E21;
+	border: 1px solid #FAD7A0;
+	width: 160px
+}
+.ideas .show .btn-primary{
+	
+	width: 200px
+}
+
+
+/* Recommended Ideas */
+
+.ideass{
+	
+	margin-top: 50px
+}
+.ideass h3{
+	
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px
+}
+.ideass .thumbnail .caption{
+	
+	text-align: center
+	
+}
+.ideass p.show{
+	
+	margin: auto
+		
+}
+.ideass .thumbnail .caption h3{
+	
+	color: #515A5A
+}
+.ideas .thumbnail .caption p{
+	
+	font-size: 15px;
+	color: #CCC;
+	margin-bottom: 10px
+}
+.ideass .thumbnail .caption .budget{
+	
+	font-weight: bold;
+	font-size: 16px;
+	color: #515A5A
+	
+}
+.ideass .thumbnail .caption p i{
+	
+	color: #BB672D
+}
+.ideass .thumbnail .caption .budget span{
+	
+	color: #BB672D
+	
+}
+.ideass .thumbnail .caption .btn-primary{
+	
+	background-color: #FFF;
+	color: #B75E21;
+	border: 1px solid #FAD7A0;
+	width: 160px
+}
+.ideass .show .btn-primary{
+	
+	width: 200px
+}
+
+
+/* End Ideas Filtering Page */
+/* start Login Page */
+
+.login .ast .check,
+.login .ast .close,
+.login .ast .check1,
+.login .ast .close1{
+	
+	display: none
+	
+}
+.idea .ast .check2,
+.idea .ast .close2,
+.idea .ast .check3,
+.idea .ast .close3{
+	
+	display: none
+	
+}
+
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #080
+}
+.login .ast .check1{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 200px;
+	top: 10px;
+	color: #080
+}
+.idea .ast .check2{
+	
+	font-size: 20px;
+	position: absolute;
+	right: -126px;
+	top: 6px;
+	color: #080
+}
+.idea .ast .close2{
+	
+	font-size: 20px;
+	position: absolute;
+	right: -126px;
+	top: 6px;
+	color: #D20707
+}
+.idea .ast .check3{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 6px;
+	color: #080
+}
+.idea .ast .close3{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 6px;
+	color: #D20707
+}
+.login .ast .mss{
+	
+	width: 500px
+}
+.login .ast .close1{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 200px;
+	top: 10px;
+	color: #D20707
+		
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 63px;
+	top: 10px;
+	color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 63px;
+	top: 10px;
+	color: #D20707
+}
+.login-page .login-block a{
+	
+	margin-top: 10px;
+	width: 100%;
+	padding: 8px 0
+}
+.login-page .login-block .show2{
+	
+	display: none
+		
+}
+/* End Login Page */
+/* Start Home Page */
+
+.item h3{
+	
+	font-family: cursive;
+	color: #A97444;
+	margin-bottom: 10px
+	
+}
+.item .sign{
+	
+	background-color: #FFF;
+	color: #A97444;
+	border: 1px solid #A97444;
+	margin-top: 10px
+}
+
+.navbar .login .log{
+	
+	
+	color: #333;
+	margin-top: 7px;
+	background-color: #FFF;
+	border: 1px solid #337AB7;
+	padding-top: 11px;
+	padding-bottom: 11px
+	
+	
+}
+.navbar .login .log:hover{
+	
+	border: 1px solid #337AB7
+	
+}
+.navbar .login .up{
+	
+	
+	color: #333;
+	margin-top: 7px;
+	background-color: #FFF;
+	border: 1px solid #5BC0DE;
+	margin-right: 10px;
+	padding-top: 11px;
+	padding-bottom: 11px
+		
+	
+	
+}
+.navbar .login .up:hover{
+	
+	border: 1px solid #5BC0DE
+	
+}
+.navbar .links{
+	
+	font-weight: bold;
+	font-family: cursive
+	
+}
+.navbar .nav-search input[type="text"],
+.navbar .nav-search .btn-default{
+	
+	
+	height: 45px;
+	margin-top: -5px
+	
+}
+/* End Home Page */
+/* Start Show Idea In Details Page */
+
+.idea_detail{
+	
+	margin-top: 40px;
+	height: 300px
+	
+}
+.idea_detail .details h3{
+	
+	
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #E7C9AE;
+	font-size: 18px;
+	
+	
+}
+.idea_detail .details h4{
+	
+	
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #9B9B9B;
+	font-size: 18px;
+	
+}
+.idea_detail .details p{
+	
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 15px
+	
+}
+.idea_detail .details span{
+	
+	
+	font-weight: bold;
+	color: #E7C9AE;
+	font-size: 18px;
+	
+}
+.idea_detail .details a{
+	
+	
+	text-decoration: none;
+	color: #9B9B9B;
+	font-weight: bold;
+	font-size: 18px
+	
+}
+.idea_detail .details a i{
+	
+	color: #E7C9AE
+}
+/* End Show Idea In Details Page */
+
+/* Start Add Idea Page */
+
+.add_idea .header h2{
+	
+	
+	color: #E7C9AE;
+	font-family: cursive;
+	font-weight: bold;
+	margin-bottom: 15px
+	
+}
+.add_idea .header p{
+	
+	
+	color: #9B9B9B;
+	font-family: cursive;
+	font-weight: 700;
+	margin-bottom: 50px
+	
+}
+add_idea .form{
+	
+	
+	height: 400px
+
+}
+.add_idea .form .idea .cat{
+	
+	
+	width: 350px;
+	margin-bottom: 30px
+}
+.add_idea .form .idea input[type="text"]{
+	
+	
+	width: 320px;
+	margin-bottom: 30px
+		
+}
+.add_idea .form .idea textarea{
+	
+	width: 320px;
+	height: 300px;
+	resize: none
+	
+}
+.add_idea .form .idea input[type="submit"]{
+	
+	
+	width: 130px;
+	background-color: #E7C9AE;
+	margin-top: 30px;
+	padding: 10px;
+	color: #000
+	
+}
+/* End Add Idea Page */
+/* Start Terms Page */
+
+.terms .term p{
+	
+	font-size: 17px
+	
+}
+.terms .term ul li{
+	
+	font-size: 17px;
+	margin-bottom: 20px
+	
+}
+/* Start Sign up */
+
+.signup-page-main{
+	
+	margin-top: 20px;
+	padding: 0
+	
+}
+.signup-page-main .signup-main .signup-block{
+	
+	margin: 0;
+	padding: 20px
+	
+}
+.signup-page-main .login input{
+	
+	width: 100%;
+	margin-bottom: 10px;
+	height: 35px
+	
+}
+.navbar .links li a{
+	
+	font-family: Athelas
+	
+}

@@ -1,0 +1,85 @@
+ echo '
+			
+	  
+	<div class="container" style="margin-top:50px">
+	  <div class="alert alert-info role="alert">
+		  <strong>Done!</strong> You Are Registered Successfully. Welcome To You In Fursah
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+    </div>
+	</div>  
+	<div class="login-page">
+	<!--<h1 style="margin-bottom:35px" class="text-center log">Sign In</h1>
+	<i style="position:absolute;left:570px;top:211px;font-weight:bold; font-size:28px;color:#B75E21" class="fa fa-user fa-5x"></i>-->
+	
+	
+	<div class="container text-center center-block" style="width:230px">
+		<div class="" style="margin-bottom:30px;width:20px;float:left;margin-top:5px">
+			
+			<i style="font-weight:bold; font-size:28px;color:#B75E21" class="fa fa-user fa-5x"></i>
+			
+		</div>
+		<div style="width:170px;margin-left:20px">
+			<h1 class="text-center log" style="">Sign In</h1>
+		</div>
+	</div>
+	
+	
+    <div class="login-main" style="height:430">
+			<div class="login-block">
+				<form class="login" action="login-conn.php" method="post">
+					<div class="ast">
+						<label style="margin-right:5px">National ID</label>
+						<input type="text" name="id" class="id" placeholder="Enter Your National ID" required="">
+						<i class="fa fa-check check"></i>
+					    <i class="fa fa-close close"></i>
+					    <div class="alert alert-danger empty-alert">Please Fill Your <strong>National ID</strong></div>
+					    <div class="alert alert-danger custom-alert">National ID Must Be <strong>10 digits Only</strong></div>
+						<div class="alert alert-danger number-alert">National ID Must Be Contains <strong>Characters Only</strong></div>
+						<div class="alert alert-danger one-alert">National ID Must Be Start by <strong> Number 1</strong></div>
+					</div>
+					<div class="ast">
+						<label style="margin-right:20px">Password</label>
+						<input type="password" class="password" name="password" class="lock" placeholder="Password" required="">
+						<i class="fa fa-check check check-pass"></i>
+						<i class="fa fa-close close close-pass"></i>
+						<i class="show-pass fa fa-eye fa-2x"></i>
+						<div class="alert alert-danger empty-alert">Please Fill Your <strong>Password</strong></div>
+							
+						<div class="alert alert-danger long-alert">Please Password Must Be  <strong>6 digits</strong></div>
+						<div class="alert alert-danger custom-alert">Please Password Must Be Contains<strong>One Uppercase Character</strong></div>
+						<div class="alert alert-danger lower-alert">Please Password Must Be Contains<strong>One Lowercase Character</strong></div>
+						<div class="alert alert-danger number-alert">Please Password Must Be Contains<strong>One Number</strong></div>
+					</div>
+					<div class="forgot-top-grids">
+						<div style="margin-left:150px">
+							<ul>
+								<li>
+									<input type="checkbox" id="">
+									<label style="color:#000"><span></span>Remember me</label>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<input style="background-color:#FAD7A0;color:#000" type="submit" name="Sign In" value="Sign In">	
+					<div  style="width:100%;margin-top:20px;text-align:center;margin-bottom:20px">
+							Forget your password?<a style="color:#337AB7;display:inline" href="reset_password.php"> Reset It</a>
+					</div>
+					<h3>Don\'t Have An Account?<a href="signup.php"> Sign up Here</a></h3>				
+					<!--<h2>or login with</h2>
+					<div class="login-icons">
+						<ul>
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>						
+						</ul>
+					</div>-->
+				</form>
+			</div>
+      </div>
+</div>
+	 
+							
+';
