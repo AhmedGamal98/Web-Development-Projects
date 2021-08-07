@@ -1,0 +1,261 @@
+/* Start Main Rules */
+
+.alert-danger{
+	
+	display: none;
+	margin-top: 0
+	
+}
+
+.main-color{
+	
+	background-color: #4C6384;
+	font-size: 16px;
+	
+}
+.astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 30px;
+	top: 8px;
+	color: #D20707
+		
+}
+.contact .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 320px;
+	top: 5px;
+	color: #D20707
+		
+}
+h1{
+	
+	font-size: 55px;
+	margin: 40px 0;
+	font-weight: bold;
+	color: #666;
+	display: inline
+	
+}
+.show-pass{
+	
+	position: absolute;
+	top: 9px;    /*    6px     */
+	right: 50px; /*  -30px  */
+	color: #888;
+	font-size: 22px;
+	cursor: pointer
+}
+.nice-message{
+	
+	padding: 10px;
+	background-color: #FFF;
+	border-left: 5px solid #080;
+	margin-top: 30px
+	
+	
+}
+/* Start Login form  */
+
+.design{
+	
+	background-color: #FFF;
+	width: 400px;
+	height: 470px;
+	margin: auto;
+	margin-bottom: 80px
+	
+}
+.login{
+	
+	width: 300px;
+	margin: 100px auto;
+	padding-top: 80px
+		
+}
+.login h4{
+	
+	color: #888;
+	margin-bottom: 50px;
+	font-size: 30px
+	
+}
+.login input[type="text"],
+.login input[type="password"]{
+	
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  box-shadow: none;
+  padding-right: 25px	
+	
+}
+
+.login .form-control{
+	
+	background-color: #EAEAEA
+	
+}
+.login .btn{
+	
+	
+	background-color: #E9E2CF;
+	color: #FFF;
+	font-size: 25px;
+	border-radius: 30px;
+	border: none
+	
+}
+.login .ast{
+	
+	position: relative
+}
+.login .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 285px;
+	top: 4px;
+	color: #D20707
+	
+}
+.login .ast .show-pass{
+	
+	position: absolute;
+	top: 6px;
+	right: 260px;
+	color: #888;
+	font-size: 20px;
+	cursor: pointer
+
+}
+.login .ast i{
+	
+	height: 0;
+	float: right;
+	position: relative;
+	top: -45px;
+	color: #A3A697
+	
+}
+.login .ast .check,
+.login .ast .close{
+	
+	display: none
+	
+}
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 255px;
+	top: 5px;
+	color: #D20707;
+	background-color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 255px;
+	top: 5px;
+	color: #080;
+	background-color: #080
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 235px;
+	top: 5px;
+	color: #080;
+	background-color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 235px;
+	top: 5px;
+	color: #D20707;
+	background-color: #D20707
+}
+
+
+/* Start Form Contact */
+
+.login .ast i{
+	
+	height: 0;
+	float: right;
+	position: relative;
+	top: -45px;
+	color: #A3A697
+	
+}
+.login .ast .check,
+.login .ast .close,
+.login .ast .checks,
+.login .ast .closes{
+	
+	display: none
+	
+}
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 285px;
+	top: 5px;
+	color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 285px;
+	top: 5px;
+	color: #080;
+}
+.login .ast .closes{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 885px;
+	top: 5px;
+	color: #D20707
+		
+}
+.login .ast .checks{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 885px;
+	top: 5px;
+	color: #080;
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 285px;
+	top: 5px;
+	color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 285px;
+	top: 5px;
+	color: #D20707;
+}
+
+/* End Login form  */
