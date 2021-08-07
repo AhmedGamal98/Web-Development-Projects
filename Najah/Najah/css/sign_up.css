@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    overflow-x: hidden;
+}
+
+
+header {
+    
+    background-image:url(../img/cover.jpg);
+    height:95vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+#s_btn{
+    margin-left: 20px;
+    width: 130px;
+    border-radius: 25px;
+    background-color: #2b56ba;
+}
+#s_btn:hover{
+    background-color: #517EE7;
+}
+#log_out_btn{
+    margin-left: 20px;
+    width: 140px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#log_out_btn:hover{
+    background-color: #2b56ba;
+}
+#s1_btn{
+    margin-left: 20px;
+    width: 130px;
+    border-radius: 25px;
+}
+#s1_btn:hover{
+    background-color: #2b56ba;
+}
+
+.content{
+
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 60%; 
+    height: 70%;
+    padding: 40px;
+
+}
+.content h1{
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+}
+.content form{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 600px;
+}
+.content form input{
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.content form button{
+    background-color: #2b56ba;
+    float: right;
+    border-radius: 22px;
+    width: 120px;
+    padding: 10px;
+}
+
+
+

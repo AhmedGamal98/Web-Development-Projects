@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Poppins: Poppins, cursive;
+    --light-black: #2e2c2eaf;
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+#s1_btn{
+    margin-left: 20px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: #2b56ba;
+}
+#s1_btn:hover{
+    background-color: #2b56ba;
+}
+#s_btn{
+    margin-left: 20px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#s_btn:hover{
+    background-color: #2b56ba;
+}
+#log_out_btn{
+    margin-left: 20px;
+    width: 140px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#log_out_btn:hover{
+    background-color: #2b56ba;
+}
+#pro_btn{
+    margin-left: 20px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#pro_btn:hover{
+    background-color: #2b56ba;
+}
+.main a{
+    text-decoration: none;
+    color: #2b56ba;
+    font-size: 22px;
+}
+.main a:hover{
+    text-decoration: none;
+    color: #517EE7;
+}
+header {
+    
+    height:90vh;
+
+    
+}
+header h1{
+    font-size: 60px;
+    color: #2b56ba;
+    
+}
+header p{
+    color: black;
+    word-spacing: 10px;
+    font-size: 20px;
+}
+header .btn{
+    border-radius: 25px;
+    margin-top: 50px;
+    width: 200px;
+    font-style: bold;
+    background-color: #fff;
+}
+header .btn:hover{
+    background-color: #2b56ba;
+}

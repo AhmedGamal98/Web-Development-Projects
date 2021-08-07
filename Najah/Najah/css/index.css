@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Poppins: Poppins, cursive;
+    --light-black: #2e2c2eaf;
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+#s_btn{
+    margin-left: 20px;
+    width: 130px;
+    border-radius: 25px;
+}
+#s_btn:hover{
+    background-color: #2b56ba;
+}
+#log_out_btn{
+    margin-left: 20px;
+    width: 140px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#log_out_btn:hover{
+    background-color: #2b56ba;
+}
+header {
+    
+    background-image:url(../img/cover.jpg);
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+header h1{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+header p{
+    color: black;
+    word-spacing: 10px;
+    font-size: 20px;
+}
+header .btn{
+    border-radius: 25px;
+    margin-top: 50px;
+    width: 200px;
+    font-style: bold;
+    background-color: #2b56ba;
+}
+#benefits h2 {
+    color: #2b56ba;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#benefits .sub{
+    font-weight: 300px;
+    word-spacing: 3px;
+    text-align: center;
+}
+#benefits #like{
+    color: #2b56ba;
+    font-size:20px;
+    margin-right: 5px;
+}
+#benefits #economic{
+    color: gray;
+    font-size:20px;
+    margin-right: 5px;
+}
+#benefits #ai{
+    color: rgb(166, 79, 192);
+    font-size:20px;
+    margin-right: 5px;
+}
+#benefits #chart{
+    color: rgb(247, 188, 28);
+    font-size:20px;
+    margin-right: 5px;
+}
+#benefits #correct{
+    color:rgb(30, 173, 30);
+    font-size:20px;
+    margin-right: 5px;
+}
+
+#benefits p{
+    margin-left: 29px;
+}
