@@ -1,0 +1,396 @@
+.login{
+	
+	width: 400px;
+	margin: auto;
+	position: relative;
+	background-color: #FFF;
+	margin-bottom: 100px;
+	margin-top: 180px
+	
+}
+.login h2{
+	
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-family: cursive
+	
+}
+.login a{
+	
+	text-decoration: none;
+	color: #CCC;
+	margin-bottom: 15px
+	
+}
+.login input[type="text"],
+.login input[type="tel"],
+.login input[type="email"],
+.login input[type="password"]{
+	
+	
+	height: 40px;
+	margin-bottom: 30px;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #CCC;
+	border-radius: 0;
+	padding-left: 25px
+	
+}
+.login input[type="submit"]{
+	
+	width: 400px;
+	height: 40px;
+	background-color: #FFF;
+	border: 1px solid #3279B5;
+	color: #000
+	
+}
+.login .fa-envelope{
+	
+	position: absolute;
+	top: 12px;
+	font-size: 17px
+}
+.login .fa-lock{
+	
+	position: absolute;
+	top: 10px;
+	font-size: 17px
+}
+.login .fa-user{
+	
+	position: absolute;
+	top: 10px;
+	font-size: 17px
+}
+.login .fa-phone{
+	
+	position: absolute;
+	top: 10px;
+	font-size: 17px
+}
+.login .fa-edit{
+	
+	position: absolute;
+	top: 10px;
+	font-size: 17px
+}
+
+/* start Login Validation */
+
+.ast{
+	
+	position: relative
+}
+.alert-danger,
+.alert-success{
+	
+	padding: 6px;
+	display: none
+	
+}
+.ast .show-pass{
+	
+	position: absolute;
+	top: 10px;    /*    6px     */
+	right: 13px; /*  -30px  */
+	color: #888;
+	font-size: 20px;
+	cursor: pointer
+}
+
+.login .ast .check,
+.login .ast .close{
+	
+	display: none
+	
+}
+
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #080
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #D20707
+}
+.login .login-block a{
+	
+	margin-top: 10px;
+	width: 100%;
+	padding: 8px 0
+}
+.login .login-block .show2{
+	
+	display: none
+		
+}
+
+/* End Login Validation */
+
+.design{
+	
+	
+	background-color: #FFF;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	border-radius: 0;
+	width: 515px;
+	padding: 60px
+	
+}
+.lab{
+	
+	
+	background-color: #FFF;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	border-radius: 0
+	
+	
+}
+/* Start About us */
+.about-us{
+	background: url('../images/image1%20(19).jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #FFF;
+	height: 600px
+}
+.about-us .overlay{
+	
+	background: rgba(49 , 55 , 61 , 0.9);
+	width: 50%;
+	height: 100%;
+	float: right;
+	text-align: right
+} 
+.about-us .overlay h3{
+	
+	margin-top: 50px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	
+} 
+.about-us .overlay .scrap{
+	
+	margin-top: 150px;
+	font-family: cursive
+	
+}
+.about-us .overlay p{
+	
+	margin-top: 40px;
+	color: #FFF;
+	line-height: 2.5;
+	width: 400px
+} 
+/* Start Footer */
+
+.footer{
+	
+	
+	height: 100px;
+	background-color: #515A5A;
+	color: #FFF;
+	font-weight: bold
+	
+}
+.footer p{
+	
+	
+	margin-top: 40px;
+	display: inline-block
+	
+}
+.footer p a{
+	
+	
+	text-decoration: none;
+	color: #CCC
+	
+}
+
+/* Start Ideas Filtering Page */
+
+.ideas .thumbnail img{
+	
+	height: 140px
+	
+	
+}
+.ideas h3{
+	
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px
+}
+.ideas .thumbnail .caption{
+	
+	text-align: center
+	
+}
+.ideas p.show{
+	
+	margin: auto
+		
+}
+.ideas .thumbnail .caption h3{
+	
+	color: #337AB7
+}
+.ideas .thumbnail .caption p{
+	
+	font-size: 15px;
+	color: #CCC;
+	margin-bottom: 10px
+}
+.ideas .thumbnail .caption .budget{
+	
+	font-weight: bold;
+	font-size: 16px;
+	color: #337AB7
+	
+}
+.ideas .thumbnail .caption p i{
+	
+	color: #BB672D
+}
+.ideas .thumbnail .caption .budget span{
+	
+	color: #BB672D
+	
+}
+.ideas .thumbnail .caption .btn-primary{
+	
+	background-color: #FFF;
+	color: #337AB7;
+	width: 230px
+}
+.ideas .show .btn-primary{
+	
+	width: 200px
+}
+/* Start Show Idea In Details Page */
+
+.idea_detail{
+	
+	margin-top: 40px;
+	height: 350px
+	
+}
+.idea_detail .details h3{
+	
+	
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #F2B33F
+	
+	
+}
+.idea_detail .details h4{
+	
+	
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #F2B33F
+	
+}
+.idea_detail .details p{
+	
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 20px
+	
+}
+.idea_detail .details span{
+	
+	
+	font-weight: bold;
+	color: #F2B33F
+	
+}
+.idea_detail .details a{
+	
+	
+	text-decoration: none;
+	color: #F2B33F;
+	font-weight: bold;
+	font-size: 15px
+	
+}
+.idea_detail .details a i{
+	
+	color: #F2B33F;
+	font-size: 18px
+}
+/* End Show Idea In Details Page */
+/* Start Heeader */
+
+.navbar .links li a{
+	
+	
+	font-weight: bold;
+	font-size: 16px;
+	font-family: cursive;
+	margin-top: 0;
+	padding-top: 60px
+	
+}
+.navbar .link li a{
+	
+	
+	font-weight: bold;
+	font-size: 16px;
+	font-family: cursive;
+	margin-top: 0;
+	padding-top: 10px
+	
+}
+.navbar .links li a:hover{
+	
+	color: #D68910;
+	background-color: #FFF
+	
+}
+.car .carousel-inner .item img{
+	
+	width: 100%;
+	height: 700px
+	
+}

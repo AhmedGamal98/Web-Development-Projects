@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign up</title>
+		<link href="layouts/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">	
+		<link href="layouts/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">		
+		<link href="layouts/css/login.css" rel="stylesheet" type="text/css" media="all">
+		<link href="layouts/css/layout.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body>
+		<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left">
+      <ul class="nospace">
+        <!--<li><a href="index.html"><i class="fas fa-home fa-lg"></i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>-->
+		<li>Alber Charity</li>  
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i> 0117222084</li>
+        <li><i class="fas fa-envelope rgtspace-5"></i> info@alber.com</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <!--<h1 class="logoname"><a href="index.html"><span>Suro</span>gou</a></h1>-->
+     <a class="navbar-brand" href="homepage.php"><img src="admin/layouts/images/alber1.jpg" alt="Alber" style="width:55%;height:168px"></a>
+    </div>
+    <div class="one_half" style="margin-top:30px">
+      <ul class="nospace clear">
+        <li class="one_half first">
+          <div class="block clear"><i class="fas fa-phone"></i> <span><strong class="block">Call Us:</strong> 0117222084</span> </div>
+        </li>
+        <li class="one_half">
+          <div class="block clear"><i class="far fa-clock"></i> <span><strong class="block"> Morning:</strong> 08.00Am - 12.00Am</span> <span><strong class="block"> Evening:</strong> 04.00Am - 5.30Am</span> </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear" style="margin-top:10px"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="homepage.php">Home</a></li>
+    <li><a href="events.php">Events</a></li>  
+    <li><a href="cases.php">Need Cases</a></li>
+      <li><a href="sign-up.php">Sign Up</a></li>
+    <li><a href="login.php">Sign In</a></li>
+      <!--<li><a class="drop" href="#">Ahmed</a>
+        <ul>
+          <li><a href="User/profile.php"><i class="fa fa-user"></i> Profile</a></li>
+          <li><a href="login.php"><i class="fa fa-sign-out"></i> Logout</a></li>
+        </ul>
+      </li>
+      <!--<li><a href="#">Link Text</a></li>
+      <li><a href="#">Link Text</a></li>
+      <li><a href="#">Link Text</a></li>
+      <li><a href="#">Long Link Text</a></li>-->
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>	
+<div class="wrapper bgded overlay" style="background-image:url('layouts/images/slide4.jpg');height:400px;">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Sign Up</h6>
+    <ul>
+      <li><a href="homepage.php">Home</a></li>
+      <li><a href="login.php">Sign Up</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>	
+<?php
+
+   //session_start();
+
+    include('connect.php');
+	$national = $_POST["id"];	
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+	$password1 = $_POST["password2"];	
+	$hashedPass = sha1($password);
+	$hashedPass1 = sha1($password1);	
+    $phone = $_POST["phone"];
+	
+	
+	
+if($password == $password1){
+	
+$sql=$con->prepare("SELECT * FROM user WHERE 
+ Email=? AND password=?");
+$sql->execute(array($email,$hashedPass));
+$row=$sql->fetch();
+$count=$sql->rowCount();
+	
+
+if($email != "" && $hashedPass != ""){
+	
+	
+if($count>0){
+    
+
+    $sql = $con->prepare("SELECT * FROM  user");
+    $sql->execute();
+    $rows = $sql->fetchAll();
+
+    foreach($rows as $pat)
+    {
+        if($email == $pat["Email"] && $hashedPass == $pat["password"])
+        {
+            echo '
+			
+	  
+	<div class="container" style="margin-top:50px">
+	  <div class="alert alert-info role="alert">
+		  <strong>Error!</strong> Incorrect Email Or Password Please Try Again
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+    </div>
+	</div>  
+	<div class="login design">
+			<h2>Sign Up</h2>
+			<form class="form" action="signup-conn.php" method="post">
+			    <div class="ast">
+					<i class="fa fa-edit"></i>
+					<input class="form-control id" type="text" placeholder="Enter Your National ID" name="id" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Please Fill Your <strong>National ID</strong></div>
+					<div class="alert alert-danger custom-alert">National ID Must Be <strong>10 digits Only</strong></div>
+					<div class="alert alert-danger number-alert">National ID Must Be Contains <strong>Numbers Only</strong></div>
+					<div class="alert alert-danger one-alert">National ID Must Be Start by <strong> Number 1</strong></div>
+				</div>
+				<div class="ast">
+					<i class="fa fa-user"></i>
+					<input class="form-control username" type="text" placeholder="Enter Your Name" name="name" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">User Name Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger number-alert">User Name Must Be <strong>Contains Only Characters</strong></div>
+				</div>
+				<div class="ast">
+					<i class="fa fa-phone"></i>
+					<input class="form-control phone" type="tel" placeholder="Enter Your Phone Number" name="phone" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Phone Number Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Phone Number Must Be Contains At Least  <strong>11 Numbers</strong></div>
+					<div class="alert alert-danger custom-alert">Phone Number Must Be Contains Numbers <strong>Only</strong></div>
+					<div class="alert alert-danger zero-alert">Phone Number Must Be Start With <strong>0</strong> Number</div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-envelope"></i>
+					<input class="form-control email" type="email" placeholder="Enter Your Email" name="email" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Email Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Email Must Be Contains <strong>@</strong></div>
+					<div class="alert alert-danger custom-alert">Email Must Be Contains <strong>.com</strong></div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-lock"></i>
+					<input class="form-control password" type="password" placeholder="Enter Your Password" name="password" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check check-pass"></i>
+					<i class="glyphicon glyphicon-remove close close-pass"></i>
+					<i class="show-pass fa fa-eye fa-2x"></i>
+					<div class="alert alert-danger empty-alert">Password Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Password Must Be At Least <strong>10 Characters</strong></div>
+					<div class="alert alert-danger custom-alert">Password Must Be Contains At Least <strong>Uppercase Letters.</strong></div>
+					<div class="alert alert-danger lower-alert">Password Must Be Contains At Least <strong>Lowercase Letters.</strong></div>
+					<div class="alert alert-danger number-alert">Password Must Be Contains At Least <strong>5 Numbers.</strong></div>
+					<div class="alert alert-info">Password Must Be Contains At Least <strong>One Lowercase Letters and One Uppercase and one number.</strong></div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-lock"></i>
+					<input class="form-control password2" type="password" placeholder="Confirm Password" name="password2" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check check-pass"></i>
+					<i class="glyphicon glyphicon-remove close close-pass"></i>
+					<div class="alert alert-danger empty-alert">Password Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger custom-alert">Password Does Not <strong>Match.</strong></div>
+				</div>	
+				<a href="login.php" class="pull-right">Already I Have An Account?</a>
+				<input type="submit" value="Sign Up" name="sign-up" class="btn btn-primary center-block"/>
+			</form>
+		</div>
+	 
+							
+';
+        }
+        
+    }
+    
+} else{
+	
+
+	
+	  $sql = "INSERT INTO user (national_id , Name , Email , password , phone) VALUES ('$national' , '$name', '$email', '$hashedPass', '$phone')";
+
+      $con->exec($sql);
+    
+	
+      //header('Location:login.php');
+	
+	  echo '
+			
+	  
+	<div class="container" style="margin-top:50px">
+	  <div class="alert alert-info role="alert">
+		  <strong>Done!</strong> You Are Registered Successfully. Welcome To You In Alber Charity
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+    </div>
+	</div>  
+	<div class="login design">
+			<h2>Sign In</h2>
+			<form class="form" action="login-conn.php" method="post">
+				<div class="ast">
+					<i class="fa fa-envelope"></i>
+					<input class="form-control email" type="email" placeholder="Enter Your Email" name="email" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Email Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Email Must Be Contains <strong>@</strong></div>
+					<div class="alert alert-danger custom-alert">Email Must Be Contains <strong>.com</strong></div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-lock"></i>
+					<input class="form-control password" type="password" placeholder="Enter Your Password" name="password" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check check-pass"></i>
+					<i class="glyphicon glyphicon-remove close close-pass"></i>
+					<i class="show-pass fa fa-eye fa-2x"></i>
+					<div class="alert alert-danger empty-alert">Password Can\'t Be <strong></strong>Empty</div>
+					<!--<div class="alert alert-danger long-alert">Password Must Be At Least <strong>10 Characters</strong></div>-->
+					<div class="alert alert-danger custom-alert">Password Must Be Contains At Least <strong>Uppercase Letters.</strong></div>
+					<div class="alert alert-danger lower-alert">Password Must Be Contains At Least <strong>Lowercase Letters.</strong></div>
+					<div class="alert alert-danger number-alert">Password Must Be Contains At Least <strong>5 Numbers.</strong></div>
+				</div>	
+				<a href="sign-up.php" class="pull-right">Don\'t Have An Acount?</a>
+				<a href="resetpassword.php" class="pull-left">Reset Password?</a>
+				<input type="submit" value="Login" name="login" class="btn btn-primary center-block"/>
+			</form>
+		</div>
+	 
+							
+';
+	
+  
+	  }}else{
+	
+	
+	//include('logout.php');
+	include('signup.php');
+
+}
+	
+}else{
+	
+	
+	
+	 echo '
+			
+	  
+	<div class="container" style="margin-top:50px">
+	  <div class="alert alert-info role="alert">
+		  <strong>Error!</strong> Password Does Not Match
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+    </div>
+	</div>  
+	<div class="login design">
+			<h2>Sign Up</h2>
+			<form class="form" action="signup-conn.php" method="post">
+			    <div class="ast">
+					<i class="fa fa-edit"></i>
+					<input class="form-control id" type="text" placeholder="Enter Your National ID" name="id" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Please Fill Your <strong>National ID</strong></div>
+					<div class="alert alert-danger custom-alert">National ID Must Be <strong>10 digits Only</strong></div>
+					<div class="alert alert-danger number-alert">National ID Must Be Contains <strong>Numbers Only</strong></div>
+					<div class="alert alert-danger one-alert">National ID Must Be Start by <strong> Number 1</strong></div>
+				</div>
+				<div class="ast">
+					<i class="fa fa-user"></i>
+					<input class="form-control username" type="text" placeholder="Enter Your Name" name="name" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">User Name Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger number-alert">User Name Must Be <strong>Contains Only Characters</strong></div>
+				</div>
+				<div class="ast">
+					<i class="fa fa-phone"></i>
+					<input class="form-control phone" type="tel" placeholder="Enter Your Phone Number" name="phone" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Phone Number Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Phone Number Must Be Contains At Least  <strong>11 Numbers</strong></div>
+					<div class="alert alert-danger custom-alert">Phone Number Must Be Contains Numbers <strong>Only</strong></div>
+					<div class="alert alert-danger zero-alert">Phone Number Must Be Start With <strong>0</strong> Number</div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-envelope"></i>
+					<input class="form-control email" type="email" placeholder="Enter Your Email" name="email" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check"></i>
+					<i class="glyphicon glyphicon-remove close"></i>
+					<div class="alert alert-danger empty-alert">Email Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Email Must Be Contains <strong>@</strong></div>
+					<div class="alert alert-danger custom-alert">Email Must Be Contains <strong>.com</strong></div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-lock"></i>
+					<input class="form-control password" type="password" placeholder="Enter Your Password" name="password" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check check-pass"></i>
+					<i class="glyphicon glyphicon-remove close close-pass"></i>
+					<i class="show-pass fa fa-eye fa-2x"></i>
+					<div class="alert alert-danger empty-alert">Password Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger long-alert">Password Must Be At Least <strong>10 Characters</strong></div>
+					<div class="alert alert-danger custom-alert">Password Must Be Contains At Least <strong>Uppercase Letters.</strong></div>
+					<div class="alert alert-danger lower-alert">Password Must Be Contains At Least <strong>Lowercase Letters.</strong></div>
+					<div class="alert alert-danger number-alert">Password Must Be Contains At Least <strong>5 Numbers.</strong></div>
+					<div class="alert alert-info">Password Must Be Contains At Least <strong>One Lowercase Letters and One Uppercase and one number.</strong></div>
+				</div>	
+				<div class="ast">
+					<i class="fa fa-lock"></i>
+					<input class="form-control password2" type="password" placeholder="Confirm Password" name="password2" autocomplete="off"/>
+					<i class="glyphicon glyphicon-ok check check-pass"></i>
+					<i class="glyphicon glyphicon-remove close close-pass"></i>
+					<div class="alert alert-danger empty-alert">Password Can\'t Be <strong></strong>Empty</div>
+					<div class="alert alert-danger custom-alert">Password Does Not <strong>Match.</strong></div>
+				</div>	
+				<a href="login.php" class="pull-right">Already I Have An Account?</a>
+				<input type="submit" value="Sign Up" name="sign-up" class="btn btn-primary center-block"/>
+			</form>
+		</div>
+	 
+							
+';
+	
+	
+	
+	
+	
+	
+}
+
+
+		
+
+	
+?>
+	
+	
+	
+  <!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="homepage.php">Alber Charity</a></p>
+    <!--<p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>-->
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+        <!--//footer-->
+		<script src="layouts/js/jquery.min.js"></script>  
+		<script src="layouts/js/bootstrap.js"></script>	
+		<script src="layouts/js/login.js"></script>	
+		<script src="layouts/js/jquery.backtotop.js"></script>
+		<script src="layouts/js/jquery.mobilemenu.js"></script>
+	</body>
+</html>
