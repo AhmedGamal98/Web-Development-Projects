@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    overflow-x: hidden;
+}
+
+
+header {
+    
+    background-image:url(../img/background.jpg);
+    height:120vh;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+#s_btn{
+    margin-left: 20px;
+    width: 130px;
+    background-color: rgba(54, 145, 79, 0.67);
+    border:0px;
+    color:#fff;
+}
+#s_btn:hover{
+    background-color: rgba(31, 134, 59, 0.67);
+}
+#s1_btn{
+    margin-left: 20px;
+    width: 130px;
+    border:1px solid  rgba(31, 134, 59, 0.67);
+    color: rgba(31, 134, 59, 0.67);
+    background-color: #fff;
+}
+#s1_btn:hover{
+    background-color: rgba(31, 134, 59, 0.67);
+    color:#fff;
+}
+.user{
+    
+    width: 55px;
+    height: 55px;
+    border: 1px solid  rgba(31, 134, 59, 0.67);
+    border-radius: 100%;
+    padding: 3px;
+    
+
+}
+.user_profile{
+    width: 150px;
+    border: 1px solid  rgba(31, 134, 59, 0.67);
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.profile_link{
+    margin-top: 5px;
+    text-decoration: none;
+    color:#333333;
+    
+}
+.profile_link:hover{
+    color:rgba(31, 134, 59, 0.67);
+}
+.content{
+    background-color:rgba(255, 255, 255, 0.7) ;
+	margin-top: 90px;
+    margin-right: 60px;
+ 	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	width: 45%; 
+	height: 120.4%;
+	padding: 15px;
+    
+    
+
+}
+.content h1{
+	text-align: center;
+	color: rgba(31, 134, 59, 0.67);;
+	font-size: 35px;
+}
+.content form{
+	
+	border-radius: 10px;
+	padding: 15px;
+	height: 200px;
+}
+.content form input{
+	border-radius: 15px;
+	border: 1px solid black;
+	padding: 10px;
+    margin-right: 110px;	
+}
+
+.content form button{
+	background-color: rgba(54, 145, 79, 0.67);
+	float: right;
+	width: 120px;
+	padding: 10px;
+	border: 0px;
+}
+.content form button:hover{
+	background-color: rgba(31, 134, 59, 0.67);
+	border: 0px;
+}
+
+footer{
+    background-color: #333333 ;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin:none;
+  }
+
