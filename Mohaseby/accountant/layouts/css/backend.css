@@ -1,0 +1,1172 @@
+/* Start Main Rules */
+
+
+.main-color{
+	
+	background-color: #4C6384;
+	font-size: 16px
+	
+}
+.astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 30px;
+	top: 8px;
+	color: #D20707
+		
+}
+h1{
+	
+	font-size: 40px;
+	margin: 40px 0;
+	font-weight: bold;
+	color: #666;
+	display: inline
+	
+}
+.show-pass{
+	
+	position: absolute;
+	top: 9px;    /*    6px     */
+	right: 50px; /*  -30px  */
+	color: #888;
+	font-size: 22px;
+	cursor: pointer
+}
+.nice-message{
+	
+	padding: 10px;
+	background-color: #FFF;
+	border-left: 5px solid #080;
+	margin-top: 30px
+	
+	
+}
+/* Icon Category Item  */
+.icon{
+	
+	background-color: #FFF
+}
+.icon hr{
+	
+	border: 1px solid #CCC
+	
+}
+.icon i{
+	
+	margin-top: 30px;
+	color: #4C6384;
+	margin-left: 40px
+}
+.icon h1{
+	
+    color: #4C6384;
+	padding-bottom: 20px
+
+}
+/* Icon Category Item  */
+/* Table Design */
+
+.main-table{
+	
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	
+}
+.main-table td{
+	
+	background-color: #FFF;
+	vertical-align: middle !important
+}
+.main-table tr:first-child td{
+	
+	background-color: #E9E2CF;
+	color: #FFF
+}
+.main-table .btn{
+	
+	padding: 3px 10px
+}
+
+/* Table Design  */
+/* Form Design */
+
+.adding{
+	
+	direction: rtl;
+	width: 850px;
+	margin-top: 50px;
+	margin: auto;
+	background-color: #FFF;
+	padding-top: 40px;
+	margin-bottom: 60px;
+	border-radius: 10px
+		
+}
+.adding .form-group{
+	
+    margin-left: 180px
+	
+}
+.adding label{
+	
+	color: #4C6384;
+    margin-top: 12px;
+	width: 200px
+	
+}
+.adding input[type="text"],
+.adding input[type="password"],
+.adding input[type="email"],
+.adding input[type="tel"],
+.adding input[type="number"]{
+	
+  border: none;
+  border-radius: 0;
+  background-color: #FFF;
+  border-bottom: 4px solid #E9E2CF;
+  box-shadow: none;
+  color: #333;
+  width: 400px	
+	
+}
+.adding .form-group input[type="submit"]{
+	
+	float: left;
+	margin-top: 30px;
+	width: 230px;
+	background-color: #E9E2CF;
+	color: #4C6384;
+	border-radius: 20px;
+	font-weight: bold;
+	border: none
+}
+.adding .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 390px;
+	top: 8px;
+	color: #D20707
+		
+}
+
+/* Form Design */
+
+.new{
+	
+	color: #4C6384;
+	display: block
+}
+.add{
+	
+	background-color: #FFFEF2;
+	color: #4C6384;
+	border-radius: 20px;
+	font-weight: bold;
+	border: none;
+	margin-top: 30px;
+	margin: 70px auto;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	
+}
+.add1{
+	
+	background-color: #FFFEF2;
+	color: #4C6384;
+	border-radius: 20px;
+	font-weight: bold;
+	border: none;
+	margin-top: 30px;
+	margin: 37px auto;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	
+}
+/* End Main Rules */
+/*  Start Header */
+
+.header{
+	
+	height: 230px;
+	background-color: #FFF;
+	border-bottom: 5px solid #CAB8A5;
+	margin: auto
+	
+}
+.header .logo{
+	
+	margin-top: 20px;
+	margin-bottom: 5px;
+	/*border: 2px solid #4C6384;*/
+	padding: 10px;
+	width: 350px
+}
+.header .logo h1{
+	
+	display: inline;
+	margin-right: 20px;
+	top: 40px;
+	color: #576E8C;
+	font-size: 27px;
+	/*box-shadow: 1px .5px .5px 1px #4C6384
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;*/
+		
+}
+.header .logo img{
+	
+   width: 140px;
+   height: 100px
+	
+}
+.header .logout{
+	
+	margin-top: 18px
+	
+}
+.header .logout h3{
+	
+	display: inline;
+	margin-left: 8px
+	
+}
+.header .logout .icon-profile{
+	
+	border: 1px solid #4E6283;
+	display: inline;
+	padding: 4px 7px;
+	color: #4E6283;
+	border-radius: 4px
+	
+}
+.logout h3 a{
+	
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 2px 12px;
+	background-color: #FFF;
+	color: #D9534F
+}
+.links{
+	
+	width: 120px
+}
+.links ul{
+	
+	display: inline-flex;
+	margin-top: 20px
+	
+}
+.links ul li{
+
+	width: 30px;
+	height: 30px;
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	padding: 3px;
+	margin-right: 10px
+		
+}
+.links ul li a{
+	
+	text-decoration: none;
+	color: #FFF
+}
+.links ul li i{
+	
+	color: #FFF
+		
+}
+.header .navbar{
+	
+	width: 700px
+}
+.header .navbar hr{
+	
+	margin: 0;
+	margin-top: 10px;
+	border: 1px solid #E9E2CF
+}
+.header .navbar ul li{
+	
+	margin-top: 0
+}
+.header .navbar ul li{
+	
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px
+}
+.header .navbar ul li a{
+	
+	text-decoration: none;
+	color: #4C6384;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px 5px
+	
+}
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover{
+	
+   color: #E9E2CF
+	
+}
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover{
+	
+	padding: 5px 5px
+	
+}
+.dropdown .dropdown-menu{
+	
+	
+	background-color: #CCC;
+	height: 153px;
+	width: 50px;
+	padding-bottom: 5px;
+	padding-right: 0;
+	margin-right: 0
+	
+}
+.dropdown .dropdown-menu li{
+	
+	width: 160px;
+	color: #FFF
+	
+}
+.dropdown .dropdown-menu li a{
+
+	float: right
+		
+}
+
+/* End Header */
+/* Start Login form  */
+
+.design{
+	
+	background-color: #FFF;
+	width: 400px;
+	height: 470px;
+	margin: auto;
+	margin-bottom: 80px
+	
+}
+.login{
+	
+	width: 300px;
+	margin: 100px auto;
+	padding-top: 80px
+		
+}
+.login h4{
+	
+	color: #888;
+	margin-bottom: 50px;
+	font-size: 30px
+	
+}
+.login input[type="text"],
+.login input[type="password"]{
+	
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  box-shadow: none;
+  padding-right: 25px	
+	
+}
+
+.login .form-control{
+	
+	background-color: #EAEAEA
+	
+}
+.login .btn{
+	
+	
+	background-color: #E9E2CF;
+	color: #FFF;
+	font-size: 25px;
+	border-radius: 30px;
+	border: none
+	
+}
+.login .ast{
+	
+	position: relative
+}
+.login .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 285px;
+	top: 4px;
+	color: #D20707
+	
+}
+.login .ast .show-pass{
+	
+	position: absolute;
+	top: 6px;
+	right: 260px;
+	color: #888;
+	font-size: 20px;
+	cursor: pointer
+
+}
+.login .ast i{
+	
+	height: 0;
+	float: right;
+	position: relative;
+	top: -45px;
+	color: #A3A697
+	
+}
+.login .ast .custom-alert,
+.login .ast .empty-alert,
+.login .ast .long-alert{
+	
+	padding: 6px;
+	display: none
+	
+}
+.login .ast .check,
+.login .ast .close{
+	
+	display: none
+	
+}
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 255px;
+	top: 5px;
+	color: #D20707;
+	background-color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 255px;
+	top: 5px;
+	color: #080;
+	background-color: #080
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 235px;
+	top: 5px;
+	color: #080;
+	background-color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 235px;
+	top: 5px;
+	color: #D20707;
+	background-color: #D20707
+}
+
+/* End Login form  */
+/* Start Bootstrap edits  */
+.navbar{
+	
+	
+	border-radius: 0;
+	margin-bottom: 0;
+	border: none
+	
+}
+.nav > li > a,
+.navbar-brand{
+	
+	padding: 15px 12px
+	
+}
+.navbar-brand{
+	
+	
+	font-size: 1em
+	
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.dropdown-menu{
+	
+	background-color: #3498db
+}
+.dropdown-menu{
+	
+	min-width: 180px;
+	padding: 0;
+	font-size: 1em;
+	border: none;
+	border-radius: 0
+	
+}
+.dropdown-menu > li > a{
+	
+	color: #FFF;
+	padding: 10px 15px
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover{
+	
+	color: #FFF;
+	background-color: #8A44ed
+	
+}
+.form-control{
+	
+	position: relative
+	
+}
+/* End Bootstrap edits  */
+/* Start Dashboard Page */
+
+.home .home-stats h1{
+	
+	color: #FFF
+}
+.home-stats .stat{
+	
+	background-color: #EEE;
+	padding: 20px;
+	font-size: 15px;
+	color: #FFF;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden
+	
+}
+.home-stats .stat i{
+	
+	position: absolute;
+	font-size: 80px;
+	top: 35px;
+	left: 30px
+		
+}
+.home-stats .stat .info{
+	
+	float: right
+	
+}
+.home-stats .stat .address{
+	
+	font-size: 22px;
+	font-weight: bold
+	
+}
+.home-stats .stat a{
+	
+	color: #FFF
+}
+.home-stats .stat a:hover{
+	
+	text-decoration: none
+}
+.home-stats .stat span{
+	
+	display: block;
+	font-size: 60px
+}
+.home-stats .st-members{
+	
+   background-color: #3498db
+	
+}
+.home-stats .st-pending{
+	
+   background-color: #c0392b
+	
+}
+.home-stats .st-items{
+	
+   background-color: #d35400
+	
+}
+.home-stats .st-comments{
+	
+   background-color: #8e44ed
+	
+}
+.latests{
+	
+	margin-top: 30px
+	
+}
+.latests .toggle-info{
+	
+	color: #999
+	
+}
+.latests .toggle-info:hover{
+	
+	color: #444;
+	cursor: pointer
+	
+}
+.latest-users{
+	
+	margin-bottom: 0
+	
+}
+.latest-users{
+	
+	padding-right: 0
+	
+}
+.latest-users li{
+	
+	padding: 10px;
+	overflow: hidden;
+	font-weight: bold
+	
+}
+.latest-users li:nth-child(odd){
+	
+	background-color: #EEE
+	
+}
+.latest-users li .btn-success,
+.latest-users li .btn-danger,
+.latest-users li .btn-primary{
+	
+	padding: 2px 8px
+	
+}
+.latest-users li .btn-danger,
+.latest-users li .btn-primary{
+	
+	margin-left: 5px
+	
+}
+/* End Dashboard Page */
+/* Start Category page  */
+.categories{
+	
+	margin-bottom: 70px
+	
+}
+.categories .main-table .number{
+	
+	
+	width: 200px
+	
+}
+.categories .main-table .edit{
+	
+	
+	width: 400px
+	
+}
+
+.categories .add{
+	
+	margin-right: 550px
+	
+}
+.main{
+	
+	height: 700px;
+	margin-top: 40px
+	
+}
+.main .items-category{
+	
+	background-color: #E9E2CF;
+	display: inline-block;
+	width: 700px;
+	margin-bottom: 40px;
+	border-radius: 30px
+}
+.main .items-category i{
+	color: #4C6384;
+	display: inline;
+	font-size: 33px;
+	display: inline-flex
+}
+.main .items-category a{
+	
+	text-decoration: none;
+	color: #4C6384;
+	font-weight: bold;
+	font-size: 33px;
+	display: inline-flex;
+	margin-right: 10px
+	
+}
+.main .list{
+	
+	margin-right: 220px
+	
+}
+.main .list ul{
+	
+	background-color: #E9E2CF;
+	width: 700px;
+	height: 55px;
+	margin-bottom: 40px;
+	border-radius: 30px
+}
+.main .list ul li{
+	
+	display: inline-flex
+}
+.main .list ul li.dropdown{
+	
+	margin-left: 400px;
+	margin-top: 15px
+	
+}
+.main .list ul li i{
+	
+	margin-left: 45px
+	
+}
+.main .list ul a{
+	
+	text-decoration: none;
+	color: #4C6384;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-flex;
+	margin-right: 10px
+	
+}
+.main .list  i{
+	
+	color: #4C6384;
+	font-size: 33px;
+	display: inline-flex
+}
+.main .list .dropdown .dropdown-menu{
+	
+	
+	height: 153px;
+	width: 50px;
+	padding-bottom: 5px;
+	padding-right: 0;
+	margin-right: 0;
+	border-radius: 0
+	
+}
+.main .list .dropdown .dropdown-menu li{
+	
+	width: 200px;
+	color: #FFF
+	
+}
+.main .list .dropdown .dropdown-menu li a{
+
+	float: right
+		
+}
+.main .list .dropdown .dropdown-menu li a:hover{
+	
+	
+	background-color: #CCC
+	
+}
+.main .buying-category{
+	
+	background-color: #E9E2CF;
+	display: inline-block;
+	width: 700px;
+	margin-bottom: 40px;
+	border-radius: 30px
+}
+.main .buying-category i{
+	color: #4C6384;
+	display: inline;
+	font-size: 33px;
+	display: inline-flex
+}
+.main .buying-category a{
+	
+	text-decoration: none;
+	color: #4C6384;
+	font-weight: bold;
+	font-size: 33px;
+	display: inline-flex;
+	margin-right: 15px
+	
+}
+.main .sale a{
+	
+	margin-right: 28px
+	
+}
+.main .product a{
+	
+	margin-right: 22px
+	
+}
+.main .purchase a{
+	
+	margin-right: 15px
+	
+}
+.main .buying-category .user,
+.main .items-category .user{
+	
+	margin-right: 0
+	
+}
+.main .buying-category .eye,
+.main .items-category .eye{
+	
+	margin-right: 400px
+	
+}
+.main .items-category .eye{
+	
+	margin-right: 410px
+}
+/* End Category page  */
+/* Start Item page  */
+
+.items{
+	
+	width: 850px;
+	margin-bottom: 40px
+	
+}
+.items .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 380px;
+	top: 8px;
+	color: #D20707
+		
+}
+.items input[type="text"]{
+	
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+  background-color: #4C6384;
+  border-bottom: 2px solid #CCC;
+  box-shadow: none;
+  padding-left: 25px;
+  color: #FFF	
+	
+}
+.items label{
+	
+	margin-top: 18px
+}
+.items input[type="submit"]{
+	
+	background-color: #E9E2CF;
+	color: #000
+	
+}
+/* End item page  */
+/* Start Member And User */
+
+.users input[type="text"],
+.users input[type="email"],
+.users input[type="password"],
+.users input[type="tel"]{
+	
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+  background-color: #4C6384;
+  border-bottom: 4px solid #E9E2CF;
+  box-shadow: none;
+  color: #FFF	
+	  
+}
+.users label{
+	
+	color: #E9E2CF;
+	padding-top: 10px
+	
+}
+.users{
+	
+	padding: 0;
+	direction: rtl;
+	width: 850px;
+	margin-top: 50px;
+		
+}
+.users input[type="submit"]{
+	
+	float: left;
+	margin-top: 40px;
+	width: 230px
+}
+.users .astrisk{
+	
+	font-size: 30px;
+	position: absolute;
+	right: 400px;
+	top: 8px;
+	color: #D20707
+		
+}
+/* End Member And User */
+/* Start Profits And Losses */
+
+.main-color{
+	
+	background-color: #FAFAFA
+}
+.profits-and-losses{
+	
+	margin-top: 40px
+	
+}
+.profits-and-losses .year{
+	
+	width: 150px;
+	height: 180px;
+	background-color: #4C6384;
+	color: #FFF;
+	border-radius: 20px
+
+}
+.profits-and-losses .year ul{
+	
+	padding: 20px 0;
+    text-align: center
+	
+}
+.profits-and-losses .year ul li{
+	
+   margin-bottom: 15px;
+   border-bottom: 1px solid #e3e3e3;
+   font-weight: bold;
+   color: #51977A;
+   font-size: 16px;
+   padding-bottom: 5px	
+}
+.profits-and-losses .year ul li.type{
+	
+	border-bottom: 3px solid #e3e3e3;
+	color: #FFF
+	
+}
+.profits-and-losses .year ul li.type,
+.profits-and-losses .year ul li.ye{
+	color: #FFF
+}
+.profits-and-losses .year ul li:last-child{
+	
+	 border-bottom: none
+}
+.profits-and-losses .year ul li:not(.type){
+	
+	 cursor: pointer
+}
+/* End Profits And Losses */
+/* Start Purchases */
+
+.bill{
+	
+	/*background-color: #FFF;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;*/
+}
+.bill hr{
+	
+	border-bottom: 3px solid #000
+	
+}
+.bill .logo{
+	
+	margin-right: 300px
+}
+.bill .fo{
+
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	height: 60px;
+	line-height: 2.8;
+	font-size: 23px
+	
+}
+.bill .logo h1{
+	
+	display: inline;
+	margin-right: 20px;
+	top: 50px;
+	color: #576E8C;
+	font-size: 27px;
+	margin-top: 10px
+		
+}
+.bill .logo img{
+	
+   width: 140px;
+   height: 120px;
+   margin-top: 10px	
+	
+}
+
+.adding .bill ul li{
+	
+	padding: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000
+	
+}
+.adding .bill ul .line{
+	
+	border-bottom: 1px solid #FFF
+	
+}
+.adding .bill ul li a{
+	
+	color: #000;
+	text-decoration: none
+	
+}
+/* End Purchases */
+/* Start Profile */
+
+.home-stats .stat .not_active_user{
+	
+	
+	padding-left: 33px
+	
+}
+
+.item-info{
+	font-weight: bold
+}
+.item-info h2{
+	
+	padding: 0 10px;
+	margin: 0;
+	font-weight: bold;
+}
+.item-info p{
+	
+	padding: 10px;
+	font-weight: bold;
+	
+}
+.item-info ul li{
+	
+	padding: 10px
+}
+.item-info ul li:nth-child(odd){
+	
+	background-color: #e8e8e8
+}
+.item-info ul li span{
+	
+	display: inline-block;
+	width: 150px
+}
+.image img{
+	
+	margin-top: 100px
+	
+}
+.item-info .btn-primary,
+.item-info .btn-danger{
+	
+	padding: 2px 12px
+	
+}
+/* End Profile */
+/* Start Footer */
+
+.footer{
+	
+	background-color: #E9E2CF;
+	height: 160px;
+	margin: auto
+}
+.footer p{
+	
+	font-size: 24px;
+	color: #FFF;
+	font-weight: bold;
+    padding-top: 40px
+}
+.footer .foot{
+	
+	margin-left: 563px
+	
+}
+.footer .foot ul li{
+	
+	margin-right: 25px
+}
+/* End Footer */
+/* From Delete Page */
+
+.alert{
+	
+	
+	margin-top: 40px
+	
+}
+.main-color{
+	
+	background-color: #FFF
+	
+}
+
+/* From Forms */
+
+.adding .form-group select option:hover{
+	
+	color: #000
+	
+}
+body{
+	
+	
+	font-family: Almarai
+	
+}
+.adding{
+	
+	
+	background-color: #FFF;
+	-webkit-box-shadow: 0 3px 10px #CCC;
+	-moz-box-shadow: 0 3px 10px #CCC;
+	-o-box-shadow: 0 3px 10px #CCC;
+	box-shadow: 0 3px 10px #CCC;
+	border-radius: 0
+	
+}

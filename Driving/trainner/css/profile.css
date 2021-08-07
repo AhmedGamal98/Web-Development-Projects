@@ -1,0 +1,55 @@
+/* Start Profile */
+
+.home-stats .stat .not_active_user{
+	
+	
+	padding-left: 33px
+	
+}
+
+.item-info{
+	font-weight: bold
+}
+.item-info h2{
+	
+	padding: 0 10px;
+	margin: 0;
+	font-weight: bold;
+}
+.item-info p{
+	
+	padding: 10px;
+	font-weight: bold;
+	
+}
+.item-info ul li{
+	
+	padding: 10px
+}
+.item-info ul li:nth-child(odd){
+	
+	background-color: #e8e8e8
+}
+.item-info ul li span{
+	
+	display: inline-block;
+	width: 150px
+}
+.image img{
+	
+	margin-top: 20px;
+	margin: auto;
+	margin-left: 380px
+	
+}
+.item-info .btn-primary,
+.item-info .btn-danger{
+	
+	padding: 2px 12px
+	
+}
+.item-info .btn-danger{
+	
+	padding: 2px 16px
+}
+/* End Profile */

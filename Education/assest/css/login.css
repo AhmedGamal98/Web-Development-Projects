@@ -1,0 +1,77 @@
+
+/* start Login Validation */
+
+.ast{
+	
+	position: relative
+}
+.alert-danger,
+.alert-success{
+	
+	padding: 6px;
+	display: none;
+	text-align: right
+	
+}
+.ast .show-pass{
+	
+	position: absolute;
+	top: 10px;    /*    6px     */
+	right: 13px; /*  -30px  */
+	color: #888;
+	font-size: 20px;
+	cursor: pointer
+}
+
+.login .ast .check,
+.login .ast .close{
+	
+	display: none
+	
+}
+
+.login .ast .close{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #D20707
+		
+}
+.login .ast .check{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #080
+}
+.login .ast .check-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #080
+}
+.login .ast .close-pass{
+	
+	font-size: 20px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #D20707
+}
+.login-page .login-block a{
+	
+	margin-top: 10px;
+	width: 100%;
+	padding: 8px 0
+}
+.login-page .login-block .show2{
+	
+	display: none
+		
+}
+

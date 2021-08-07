@@ -1,0 +1,216 @@
+
+
+/*---------------------------------- End of fonts ---------------------------------- */
+
+body {
+    font-family: 'Vazir', sans-serif !important;
+    color:#5c575d;
+}
+
+.ltr {
+    direction:ltr;
+}
+
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+.dropdown-footer, .dropdown-header {
+    text-align: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+}
+
+
+/*------------------------------------ contacts-list ------------------------------------*/
+
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar:before {
+    margin-right: -250px;
+}
+
+.main-sidebar {
+    left: auto;
+    right:0;
+    background-color: #eee9e6;
+}
+.main-sidebar span{
+    color:  #5c575d;
+    font-size: 22px;
+}
+.main-header{
+    background-color: #eee9e6;
+}
+.main-header i{
+    color: #5c575d;
+    font-size: 25px;
+}
+
+/* sidebar */
+
+.sidebar {
+    direction: ltr;
+}
+.sidebar h5{
+    color: #5c575d;
+    
+}
+.sidebar > div:first-child {
+    direction: rtl;
+}
+
+.control-sidebar, .control-sidebar:before {
+    left: -250px;
+    right: auto;
+    transition: left .3s ease-in-out;
+}
+
+.control-sidebar-slide-open .control-sidebar, .control-sidebar-slide-open .control-sidebar:before {
+    left: 0;
+    right: auto;
+}
+
+.small-box .icon {
+    right:auto;
+    left:10px;
+}
+
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar>.nav-item .nav-icon {
+    margin-right: 0;
+    margin-left: .2rem;
+}
+.nav-sidebar p,.nav-sidebar i{
+    font-size: 18px;
+}
+
+table td, table th{
+    font-size: 18px;
+      
+}
+table td{
+    color:#3b393b;
+}
+table th{
+    color: #7e6d71;
+}
+table button{
+    width: 110px;
+    padding: 10p;
+    border-radius: 10px;
+    font-size: 16;
+}
+
+.control-sidebar{
+    background-color: #eee9e6 ;
+    color: #5c575d;
+}
+
+.main-footer{
+    background-color:#eee9e6;
+    color: #5c575d;
+}
+.main-footer strong a{
+    color: black;
+}
+.main-footer strong a:hover{
+    color: #5c575d;
+}
+
+.main-title{
+    color: #5c575d;
+}
+
+.btn-secondary{
+    width: 145px;
+    font-size: 19px;
+    
+}
+.add_sub{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.add_sub label{
+    color: #5c575d;
+    font-size: 20px;
+}
+
+.form-check{
+    display: inline-block;
+    margin-left: 50px;
+}
+.edit{
+    color:#7e6d71;background-color:transparent;background-image:none;border-color:#7e6d71;font-size: 18px;
+    
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 370px;
+}
+.add_sub button,.sch{color:#7e6d71;background-color:transparent;background-image:none;border-color:#7e6d71;font-size: 18px;
+    
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 470px;}
+.add_sub button:hover,.sch:hover,.edit:hover{color:#fff;background-color:#7e6d71;border-color:#7e6d71}
+.add_sub button.focus,.add_sub button:focus,.sch:focus,.edit:focus{box-shadow:0 0 0 .2rem #7e6d71}
+.add_sub button.disabled,.add_sub button:disabled,.sch:disabled,.edit:disabled{color:#7e6d71;background-color:transparent}
+
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0rem !important;
+        margin-right: 4.6rem !important;
+        z-index:100;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar:before {
+        margin-right: 0;
+        width: 4.6rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .content-wrapper, .main-footer, .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+        margin-left : 0;
+        z-index: 3000;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-sidebar, .main-sidebar:before {
+        box-shadow: none!important;
+        margin-right: -250px;
+        margin-left: 0;
+    }
+
+    .content-wrapper, .content-wrapper:before, .main-footer, .main-footer:before, .main-header, .main-header:before {
+        margin-right: 0;
+    }
+
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar:before {
+        margin-right: 0;
+        z-index: 4000;
+    }
+}
+
