@@ -1,0 +1,43 @@
+extend index
+
+block pagemap
+ section.login
+  div.box-bg
+   div.inner
+    div.logo
+     a(href='index.html')
+        img(src="images/logo2.png" alt="" title="")
+    h1.title Welcome to, iTrach 
+  div.boxform
+   div.inner
+    a(href="index.html" class="back")
+      svg(width="18" height="14" viewBox="0 0 18 14"  xmlns="http://www.w3.org/2000/svg")
+       path(d="M0.290001 7.71L6.29 13.71C6.47 13.89 6.72 14 7 14C7.55 14 8 13.55 8 13C8 12.72 7.89 12.47 7.71 12.29L3.41 8L17 8C17.55 8 18 7.55 18 7C18 6.45 17.55 6 17 6L3.41 6L7.7 1.71C7.89 1.53 8 1.28 8 1C8 0.45 7.55 0 7 0C6.72 0 6.47 0.11 6.29 0.29L0.290001 6.29C0.110001 6.47 0 6.72 0 7C0 7.28 0.110001 7.53 0.290001 7.71Z" fill="")
+    h2.title  Login 
+    p.text You can register via social media
+    nav.social
+      a(class="icon-facebook" href="#" target="_blank" title="Facebook")
+       svg(id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg")
+        path(d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z")
+      a(class="icon-twitter" href="#" target="_blank" title="Twitter")
+       svg(id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg")
+        path(d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z")
+      a(class="icon-youtube" href="#" target="_blank" title="youtube")
+       svg(version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve") 
+        path(d="M286.875,229.5v63.75h150.45c-15.3,89.25-86.7,153-175.95,153c-104.55,0-191.25-86.7-191.25-191.25 s86.7-191.25,191.25-191.25c53.55,0,99.45,22.95,132.6,58.65l45.9-45.9c-45.9-45.9-107.1-76.5-178.5-76.5 c-140.25,0-255,114.75-255,255s114.75,255,255,255s242.25-114.75,242.25-255v-25.5H286.875z")
+    p.or OR
+    form(action="#" method="")
+      div.row
+       div.col-sm-12.field
+        input(type="text" class="form-control" placeholder="Enter Email Address")
+       div.col-sm-12.field
+        input(type="password" class="form-control" placeholder="Enter Password")
+       div.col-sm-12.field.flex
+        label.che-box 
+         input(type="checkbox" name="checkbox")
+         span.label-text Remember Me 
+        a(href="forgot.html"  class='forgetlink') Forgot Password ? 
+       div.col-sm-12.field
+        button(class="bottom" type="submit") Login 
+       div.col-sm-12.field
+        p Don’t have an account? #[a(href="signup.html") Sign up]

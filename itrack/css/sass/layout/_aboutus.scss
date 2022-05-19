@@ -1,0 +1,441 @@
+.about-inner {
+    @include section;
+    overflow: hidden;
+    .item {
+        &:last-child {
+            padding-left: $com-spacing-8;
+        }
+        @media (max-width: 991px) {
+            max-width: $fullwidth;
+            flex: $fullwidth;
+            &:last-child {
+                margin-top: $com-spacing-7;
+                padding-left: $com-spacing-3;
+            }
+        }
+        .photo {
+            width: $fullwidth;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            @include border-radius(0px 0px 165px 0px);
+            @media (max-width: 991px) {
+                height: 332px;
+                @include border-radius(0px 0px 50% 50%);
+            }
+            img {
+                width: $fullwidth;
+                min-height: $fullwidth;
+                object-fit: cover;
+            }
+        }
+        .inner {
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+        span {
+            color: $blue;
+            display: inline-block;
+            background: #2aabc01f;
+            @include border-radius(30px);
+            padding: $com-spacing-1 $com-spacing-5;
+            font-size: 12px;
+            margin-bottom: $com-spacing-5;
+            @media (max-width: 991px) {
+                margin-top: 28px;
+            }
+        }
+        .title {
+            @include title;
+            text-align: $left;
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+            &::before {
+                display: $none;
+            }
+        }
+        p {
+            margin-top: $com-spacing-5;
+        }
+    }
+}
+
+.about {
+    @include section;
+    background: $ofwhite;
+    .title {
+        @include title;
+    }
+    p.text-center {
+        margin-top: $com-spacing-7;
+        @media (max-width: 991px) {
+            margin-top: $com-spacing-6;
+            br {
+                display: $none;
+            }
+        }
+    }
+    .nav-tabs {
+        display: flex;
+        justify-content: center;
+        border: $zero;
+        margin-top: $com-spacing-2;
+        @media (max-width: 991px) {}
+        li {
+            margin: $com-spacing-4 $com-spacing-2 $zero $com-spacing-2;
+            @media (max-width: 550px) {}
+            a {
+                @include flex;
+                position: relative;
+                font-size: 18px;
+                width: 170px;
+                height: 170px;
+                color: $blak;
+                background: $white;
+                text-align: center;
+                border-radius: 50%;
+                @include prefixer (box-shadow, 4px 4px 60px rgba(0, 0, 0, 0.1), webkit moz o ms);
+                @include transition(all 0.5s ease-in-out 0s);
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                    width: 120px;
+                    height: 120px;
+                }
+                &:before {
+                    content: "";
+                    @include position(absolute, $bottom: -12px, $right: 0px, $left: 0px);
+                    margin: $zero $auto;
+                    width: $zero;
+                    height: $zero;
+                    border-left: 12px solid $transparent;
+                    border-right: 12px solid $transparent;
+                    border-top: 12px solid $white;
+                    opacity: 0;
+                    @include transition(all 0.5s ease-in-out 0s);
+                }
+                .icon {
+                    display: block;
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: $com-spacing-2;
+                    @media (max-width: 991px) {
+                        width: 40px;
+                        height: 40px;
+                        margin: $zero;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: $zero;
+                        left: $zero;
+                        margin: $com-spacing-3 $auto $zero 28px;
+                        width: 45px;
+                        height: 45px;
+                        background: $blue;
+                        @include border-radius(10px 5px 15px 30px);
+                        @media (max-width: 991px) {
+                            margin: $com-spacing-3 $auto $zero $com-spacing-5;
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    img {
+                        position: relative;
+                        z-index: 1;
+                        max-width: 60px;
+                        max-height: 60px;
+                        @media (max-width: 991px) {
+                            max-width: 35px;
+                            max-height: 35px;
+                        }
+                    }
+                }
+                &.active,
+                &:hover {
+                    background: #2aabc01f;
+                    border-color: #2aabc01f #2aabc01f $white;
+                }
+                &.active {
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .tab-pane {
+        width: $fullwidth;
+        background: $white;
+        margin-top: $com-spacing-6;
+        padding: $com-spacing-9;
+        @media (max-width: 991px) {
+            padding: $com-spacing-7;
+        }
+        .item {
+            @media (max-width: 991px) {
+                max-width: $fullwidth;
+                flex: $fullwidth;
+                text-align: center;
+            }
+        }
+        .inner {
+            min-width: $fullwidth
+        }
+        .title {
+            @include title;
+            text-align: $left;
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+            &::before {
+                display: $none;
+            }
+        }
+        p {
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: $com-spacing-3;
+        }
+        .flex {
+            @media (max-width: 991px) {
+                display: $none;
+            }
+        }
+    }
+    .about-img {
+        width: 100%;
+        height: 440px;
+        position: relative;
+        z-index: 1;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $blue;
+            z-index: -1;
+            -webkit-animation: border-transform-default-two 10s linear infinite alternate forwards;
+            animation: border-transform-default-two 10s linear infinite alternate forwards;
+        }
+        img {
+            width: 100%;
+            min-height: $fullwidth;
+            object-fit: cover;
+            -webkit-animation: border-transform-default 10s linear infinite alternate forwards;
+            animation: border-transform-default 10s linear infinite alternate forwards;
+        }
+    }
+    @-webkit-keyframes border-transform-default {
+        0%,
+        to {
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+        }
+        14% {
+            border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+        }
+        28% {
+            border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+        }
+        42% {
+            border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+        }
+        56% {
+            border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+        }
+        70% {
+            border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+        }
+        84% {
+            border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+        }
+    }
+    @keyframes border-transform-default {
+        0%,
+        to {
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+        }
+        14% {
+            border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+        }
+        28% {
+            border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+        }
+        42% {
+            border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+        }
+        56% {
+            border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+        }
+        70% {
+            border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+        }
+        84% {
+            border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+        }
+    }
+    @-webkit-keyframes border-transform-default-two {
+        0%,
+        to {
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+        }
+        14% {
+            border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+        }
+        28% {
+            border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+        }
+        42% {
+            border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+        }
+        56% {
+            border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+        }
+        70% {
+            border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+        }
+        84% {
+            border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+        }
+    }
+    @keyframes border-transform-default-two {
+        0%,
+        to {
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+        }
+        14% {
+            border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+        }
+        28% {
+            border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+        }
+        42% {
+            border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+        }
+        56% {
+            border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+        }
+        70% {
+            border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+        }
+        84% {
+            border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+        }
+    }
+}
+
+.cd-single-point {
+    @include position(absolute, $right: 0px, $bottom: 42px);
+    list-style-type: $none;
+    width: 72px;
+    cursor: pointer;
+    text-align: $senter;
+    z-index: 20;
+    @media (max-width: 991px) {
+        margin: $zero $auto;
+        left: $zero;
+        bottom: -32px;
+    }
+    &::after {
+        content: '';
+        @include position(absolute, $top: 0, $left: 0, );
+        border-radius: 50%;
+        width: $fullwidth;
+        height: $fullwidth;
+        animation: cd-pulse 2s infinite;
+    }
+    .cd-img-replace {
+        position: relative;
+        z-index: 2;
+        display: $block;
+        width: 72px;
+        height: 72px;
+        @include border-radius(50%);
+        @include transition(all 0.2s ease-in-out 0s);
+    }
+    .innerbc {
+        @include position(absolute, $top: 0px, $left: 0px);
+        @include flex;
+        width: 72px;
+        height: 72px;
+        @include border-radius(50%);
+        background: $blue;
+        z-index: 10;
+        color: $yellow;
+        @keyframes cd-pulse {
+            0% {
+                box-shadow: 0 0 0 0 $blue;
+            }
+            100% {
+                box-shadow: 0 0 0 30px rgba(255, 150, 44, 0)
+            }
+        }
+    }
+}
+
+.YouTubePopUp-Wrap {
+    @include position(fixed, $top: 0px, $left: 0px);
+    width: $fullwidth;
+    height: $fullwidth;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 9999999999999;
+    padding: $minmargin;
+    .YouTubePopUp-Content {
+        max-width: 680px;
+        display: $block;
+        margin: $zero $auto;
+        height: $fullwidth;
+        position: relative;
+        iframe {
+            max-width: $fullwidth !important;
+            width: $fullwidth !important;
+            display: $block !important;
+            height: 480px !important;
+            border: $none !important;
+            margin: $auto $zero;
+            background: $white;
+            padding: $minmargin;
+            @media (max-width: 767px) {
+                height: 300px !important;
+            }
+        }
+    }
+    .YouTubePopUp-Close {
+        cursor: pointer;
+        margin: $auto $zero;
+        @include flex;
+        width: 30px;
+        height: 30px;
+        background: $white;
+        background-size: $fullwidth;
+        @include transition(all 0.5s ease-in-out 0s);
+        &:hover {}
+    }
+}
+
+// End about
+.privacy-policy {
+    @include section;
+    min-height: 800px;
+    @media (max-width: 991px) {
+        min-height: inherit;
+    }
+    .title {
+        @include title;
+        text-align: $left;
+        &::before {
+            display: $none;
+        }
+    }
+    p {
+        line-height: 26px;
+        margin-top: $com-spacing-5;
+        @media (max-width: 991px) {
+            margin-top: $com-spacing-2;
+        }
+    }
+}

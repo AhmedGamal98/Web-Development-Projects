@@ -1,0 +1,85 @@
+ .footer {
+     @include section;
+     background: #191918;
+     padding: $zero !important;
+     position: relative;
+     @media (max-width: 991px) {
+         padding-top: $com-spacing-6 !important;
+     }
+     .container {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         @media (max-width: 991px) {
+             display: block;
+         }
+     }
+     .logo {
+         margin-top: $com-spacing-7;
+         @media (max-width: 991px) {
+             width: $fullwidth;
+             text-align: center;
+             margin: $zero;
+         }
+         img {
+             max-width: 122px;
+         }
+     }
+     .navmenu {
+         display: flex;
+         margin-top: $com-spacing-7;
+         margin-left: 120px;
+         @media (max-width: 991px) {
+             display: inline-block;
+             width: $fullwidth;
+             text-align: center;
+             margin: $zero;
+             margin-top: $com-spacing-6;
+         }
+         a {
+             @include hyprlink;
+             @media (max-width: 991px) {
+                 display: inline-block;
+                 margin: $zero $com-spacing-3;
+             }
+         }
+     }
+     .social {
+         @include social;
+         margin-top: $com-spacing-7;
+         @media (max-width: 991px) {
+             justify-content: center;
+         }
+         a {
+             margin-left: $com-spacing-1;
+             @media (max-width: 991px) {
+                 margin: $zero $com-spacing-1;
+             }
+         }
+     }
+     .copyright {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         margin-top: $com-spacing-7;
+         width: $fullwidth;
+         border-top: 1px solid #515151;
+         z-index: 2;
+         @media (max-width: 991px) {
+             display: block;
+         }
+         p {
+             color: #c6c6c6;
+             padding: $com-spacing-4 $com-spacing-3;
+             @media (max-width: 991px) {
+                 width: $fullwidth;
+                 text-align: center;
+             }
+             span {
+                 color: $blue;
+                 text-transform: uppercase;
+             }
+         }
+     }
+ }

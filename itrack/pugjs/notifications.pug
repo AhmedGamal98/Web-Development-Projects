@@ -1,0 +1,39 @@
+extend index
+
+block pageindex
+ section.notifications
+  div.container
+   ul.wizard
+    li 
+     a(href="index.html") 
+       | home
+       svg(width="9" height="9" viewBox="0 0 10 10"  xmlns="http://www.w3.org/2000/svg")
+        path(d="M7.58102 4.72562L2.96341 0.108013C2.81055 -0.0396239 2.56695 -0.0353851 2.41931 0.117483C2.27528 0.266608 2.27528 0.503012 2.41931 0.652115L6.76487 4.99767L2.41931 9.34322C2.26908 9.49347 2.26908 9.73707 2.41931 9.88733C2.56959 10.0376 2.81316 10.0376 2.96341 9.88733L7.58102 5.26972C7.73125 5.11944 7.73125 4.87587 7.58102 4.72562Z")
+    li  notifications
+   //-  End wizard   
+   h3.title.mb-4  notifications
+   div.inner
+    div.table-responsive
+          table(class="table table-striped")
+           - for (var x = 0; x < 9; x++) 
+              tr.not  
+               td
+                a(href="#" class="title") problem title 1
+                p.text #122424ABCD
+
+   ul(class="pagination")
+       li(class="page-item")
+        a(class="page-link" href="#") 
+         svg(width="16" height="12" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg")
+           path(d="M5.27438 5.58083L9.89199 0.963231C10.0396 0.810363 10.0354 0.566767 9.88252 0.41913C9.73339 0.2751 9.49699 0.2751 9.34789 0.41913L5.00233 4.76468L0.656779 0.41913C0.506526 0.2689 0.262929 0.2689 0.112677 0.41913C-0.0375528 0.569405 -0.0375529 0.812978 0.112677 0.963231L4.73028 5.58083C4.88056 5.73106 5.12413 5.73106 5.27438 5.58083Z")
+       li(class="page-item")
+        a(class="page-link active" href="#") 1 
+       li(class="page-item")
+        a(class="page-link" href="#") 2
+       li(class="page-item")
+        a(class="page-link" href="#") 3
+       li(class="page-item")
+        a(class="page-link" href="#") 
+         svg(width="16" height="12" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg")
+          path(d="M5.27438 5.58083L9.89199 0.963231C10.0396 0.810363 10.0354 0.566767 9.88252 0.41913C9.73339 0.2751 9.49699 0.2751 9.34789 0.41913L5.00233 4.76468L0.656779 0.41913C0.506526 0.2689 0.262929 0.2689 0.112677 0.41913C-0.0375528 0.569405 -0.0375529 0.812978 0.112677 0.963231L4.73028 5.58083C4.88056 5.73106 5.12413 5.73106 5.27438 5.58083Z")   
+ 

@@ -1,0 +1,71 @@
+.slider {
+    overflow: hidden;
+    .carousel-item {
+        &::before {
+            content: '';
+            @include position(absolute, $top: 0, $left: 0);
+            width: $fullwidth;
+            height: $fullwidth;
+            background: linear-gradient(303.91deg, #2aabc070 7.57%, #c02a6054 94.39%);
+        }
+        img {
+            width: $fullwidth;
+            height: 80vh;
+            object-fit: cover;
+            @media (max-width: 991px) {
+                height: 50vh;
+            }
+        }
+    }
+    &:hover {
+        .carousel-control-next {
+            right: $com-spacing-6;
+        }
+        .carousel-control-prev {
+            left: $com-spacing-6;
+        }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: $auto;
+        height: 32px;
+        top: 50%;
+        opacity: 1;
+        @include transition(all 0.5s ease-in-out 0s);
+        @media (max-width: 991px) {
+            display: $none;
+        }
+        svg {
+            width: 42px;
+            height: 42px;
+            fill: $white;
+            @include transition(all 0.5s ease-in-out 0s);
+        }
+        &:hover {
+            svg {
+                fill: $blue;
+            }
+        }
+    }
+    .carousel-control-next {
+        right: -90px;
+    }
+    .carousel-control-prev {
+        left: -90px;
+        svg {
+            @include rotate(180deg);
+        }
+    }
+    .carousel-indicators {
+        margin: $zero;
+        padding: $zero;
+        bottom: $com-spacing-7;
+        li {
+            background: $white;
+            width: 20px;
+            &.active {
+                background: $blue;
+            }
+        }
+    }
+}

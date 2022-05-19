@@ -1,0 +1,437 @@
+.header {
+    width: $fullwidth;
+    position: relative;
+    background: $white;
+    z-index: 1000;
+    padding: $com-spacing-6 $zero;
+    @include transition(all 0.5s ease-in-out 0s);
+    @include prefixer (box-shadow, 4px 4px 60px rgba(0, 0, 0, 0.1), webkit moz o ms);
+    @media (max-width: 991px) {
+        padding: $com-spacing-4 $zero;
+    }
+    &.sticky {
+        @include position(fixed, $top: 0, $left: 0);
+        @include transition(all 0.5s ease-in-out 0s);
+        padding: $com-spacing-4 $zero;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        img {
+            max-width: 162px;
+            @include transition(all 0.5s ease-in-out 0s);
+            @media (max-width: 991px) {
+                max-width: 114px;
+            }
+        }
+    }
+    #cssmenu {
+        @include position(relative);
+        z-index: 10;
+        #menu-button {
+            display: $none;
+        }
+        ul {
+            float: $left;
+            li {
+                float: $left;
+                @include position(relative);
+                margin: $zero $com-spacing-6;
+                &:hover>ul {
+                    left: $auto;
+                    z-index: ($zindex - 850);
+                    li {
+                        height: 40px;
+                    }
+                }
+                a {
+                    display: block;
+                    @include position(relative);
+                    @include transition(all 0.5s ease-in-out 0s);
+                    outline: $none;
+                    color: $blak;
+                    font-weight: 400;
+                    font-size: 16px;
+                    svg {
+                        max-width: 12px;
+                        fill: $blak;
+                        @include transition(all 0.5s ease-in-out 0s);
+                        @media (max-width: 991px) {
+                            display: $none;
+                        }
+                    }
+                    &:after {
+                        content: "";
+                        @include position(absolute, $bottom: -5px, $left: 0px);
+                        width: 0;
+                        background: $blue;
+                        height: 2px;
+                        @include transition(all 0.5s ease-in-out 0s);
+                        @media (max-width: 991px) {
+                            display: $none;
+                        }
+                    }
+                    &:hover,
+                    &.active {
+                        color: $blue;
+                        &:after {
+                            width: 80%;
+                        }
+                        svg {
+                            fill: $blue;
+                            @include rotate(180deg);
+                        }
+                    }
+                    .hot {
+                        @include position(absolute, $top: -20px, $left: 50%);
+                        background: $red;
+                        color: $white;
+                        font-size: 11px;
+                        line-height: 17px;
+                        padding: $zero 8px;
+                        margin-left: -20px;
+                        @include border-radius(2px);
+                        @media (max-width: 991px) {
+                            top: -8px;
+                        }
+                        &:after {
+                            content: "";
+                            @include position(absolute, $bottom: -4px, $left: 12px);
+                            border-top: 5px solid $red;
+                            border-right: 5px solid transparent;
+                            border-left: 5px solid transparent;
+                            height: $zero;
+                            width: $zero;
+                            z-index: 100;
+                        }
+                    }
+                }
+                &:hover a {
+                    color: $blue;
+                    svg {
+                        fill: $blue;
+                        @include rotate(180deg);
+                    }
+                    &:after {
+                        width: 80%;
+                    }
+                }
+            }
+            ul {
+                @include position(absolute, $top: 100%, $left: -9999px);
+                padding-top: 40px;
+                @media (max-width: 991px) {
+                    padding-top: $zero;
+                }
+                li {
+                    margin: $zero !important;
+                    height: $zero;
+                    //overflow: hidden;
+                    @include transition(all 0.5s ease-in-out 0s);
+                    background: #262726;
+                    padding: $zero $com-spacing-3;
+                    &.has-sub>a:after {
+                        content: '';
+                        @include position(absolute, $top: 18px, $left: auto, $right: 0px);
+                        width: 8px;
+                        height: 2px;
+                        display: $block;
+                        background: $white;
+                    }
+                    &.has-sub>a:before {
+                        content: '';
+                        @include position(absolute, $top: 15px, $right: 3px);
+                        display: $block;
+                        width: 2px;
+                        height: 8px;
+                        background: $white;
+                    }
+                    &.has-sub:hover>a:before {
+                        top: ($zero + 17);
+                        height: $zero;
+                    }
+                    &.has-sub:hover>a::after {
+                        background: $blue;
+                    }
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: $com-spacing-2 $zero !important;
+                        min-width: 174px !important;
+                        height: $auto !important;
+                        color: $ofwhite !important;
+                        font-size: 14px !important;
+                        border-bottom: 1px solid #404040;
+                        &:after {
+                            display: $none;
+                        }
+                        &:hover {
+                            color: $blue !important;
+                            padding-left: $com-spacing-3 !important;
+                        }
+                    }
+                    ul {
+                        margin-left: 186px;
+                        padding: $zero !important;
+                        top: $zero !important;
+                        z-index: ($zindex - 830);
+                        padding-left: $com-spacing-2 !important;
+                        &:after {
+                            display: $none;
+                        }
+                        li {
+                            a {}
+                        }
+                    }
+                    &:last-child a {
+                        border: $zero;
+                        padding-bottom: $zero;
+                    }
+                }
+            }
+        }
+    }
+    .login {
+        @include flex;
+        position: relative;
+        min-width: 44px;
+        max-width: 44px;
+        height: 44px;
+        background: $blue;
+        @include border-radius(50%);
+        cursor: pointer;
+        z-index: 101;
+        box-shadow: 10px 5px 40px #2aabc085;
+        @media (max-width: 991px) {
+            min-width: 34px;
+            max-width: 34px;
+            height: 34px;
+            margin-right: $com-spacing-7;
+        }
+        svg {
+            width: 18px;
+            fill: $white;
+            @media (max-width: 991px) {
+                width: 14px;
+            }
+        }
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        z-index: 101;
+        @media (max-width: 991px) {
+            margin-right: $com-spacing-7;
+        }
+        @media (max-width: 450px) {
+            min-width: 86px;
+            max-width: 86px;
+        }
+        img {
+            min-width: 44px;
+            max-width: 44px;
+            height: 44px;
+            @include border-radius(50%);
+            object-fit: cover;
+            box-shadow: 10px 5px 40px #2aabc085;
+            border: 2px solid $white;
+            @media (max-width: 991px) {
+                min-width: 34px;
+                max-width: 34px;
+                height: 34px;
+            }
+        }
+        .text {
+            margin-left: $com-spacing-3;
+            p {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            .name {
+                color: $blak;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .header {
+        &.sticky {
+            #cssmenu {
+                ul {
+                    li {
+                        a {
+                            padding: 10px $minmargin;
+                        }
+                    }
+                }
+            }
+        }
+        #cssmenu {
+            @include position(absolute, $right: 12px);
+            width: 200px;
+            z-index: 100;
+            #menu-button {
+                display: $block;
+            }
+            ul {
+                @include position(absolute, $top: 43px);
+                width: $fullwidth;
+                display: $none;
+                background: $blak;
+                z-index: 120;
+                li {
+                    width: $fullwidth;
+                    margin: $zero !important;
+                    height: $auto !important;
+                    position: relative;
+                    a {
+                        width: $fullwidth;
+                        padding: $com-spacing-3;
+                        height: $auto;
+                        margin: $zero;
+                        color: $white;
+                        border-bottom: 1px solid #2d2c2c;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+            #menu-button {
+                display: $block!important;
+                cursor: pointer;
+                float: $right;
+                height: 20px;
+                width: 20px;
+                &:after {
+                    @include position(absolute, $top: 10px, $right: 0px);
+                    display: $block;
+                    height: 8px;
+                    width: 20px;
+                    border-top: 2px solid $blak;
+                    border-bottom: 2px solid $blak;
+                    content: '';
+                    @include transition(all 0.3s ease-in-out 0s);
+                }
+                &:before {
+                    @include position(absolute, $top: 4px, $right: 0px);
+                    display: $block;
+                    height: 2px;
+                    width: 20px;
+                    background: $blak;
+                    content: '';
+                    @include transition(all 0.3s ease-in-out 0s);
+                }
+                &.menu-opened:after {
+                    @include rotate(45deg);
+                    background: $red;
+                    top: 11px;
+                    border: $zero;
+                    height: 2px;
+                    width: 20px;
+                    @include transition(all 0.3s ease-in-out 0s);
+                }
+                &.menu-opened:before {
+                    @include rotate(-45deg);
+                    background: $red;
+                    top: 11px;
+                    width: 20px;
+                    @include transition(all 0.3s ease-in-out 0s);
+                }
+            }
+            .submenu-button {
+                @include position(absolute, $top: 0px, $right: 0px);
+                display: $block;
+                border-left: 1px solid rgba(120, 120, 120, 0.2);
+                height: 47px;
+                width: 47px;
+                cursor: pointer;
+                z-index: 10;
+                &.submenu-button.submenu-opened {
+                    background: $blue;
+                }
+            }
+        }
+        #cssmenu ul ul li a {
+            min-width: $fullwidth;
+        }
+        #cssmenu ul ul ul li a {
+            padding-left: 35px;
+        }
+        #cssmenu ul ul li a {
+            min-width: $fullwidth!important;
+            color: $white;
+            background: $none;
+        }
+        #cssmenu ul ul li:hover>a,
+        #cssmenu ul ul li.active>a {
+            color: $white;
+        }
+        #cssmenu ul ul,
+        #cssmenu ul ul ul {
+            position: relative!important;
+            padding: $zero !important;
+            margin: $zero !important;
+            left: $zero !important;
+        }
+        #cssmenu ul ul {
+            height: 200px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        #cssmenu>ul>li.has-sub>a:after,
+        #cssmenu>ul>li.has-sub>a:before,
+        #cssmenu ul ul>li.has-sub>a:after,
+        #cssmenu ul ul>li.has-sub>a:before {
+            display: $none;
+        }
+        #cssmenu ul ul .submenu-button {
+            height: 43px;
+            width: 43px;
+        }
+        #cssmenu .submenu-button:after {
+            @include position(absolute, $top: 23px, $right: 21px);
+            width: 8px;
+            height: 2px;
+            display: block;
+            background: $white;
+            content: '';
+        }
+        #cssmenu ul ul .submenu-button:after {
+            top: 21px;
+            right: 19px;
+        }
+        #cssmenu .submenu-button.submenu-opened:after {
+            background: $white;
+        }
+        #cssmenu .submenu-button:before {
+            @include position(absolute, $top: 20px, $right: 24px);
+            display: $block;
+            width: 2px;
+            height: 8px;
+            background: $white;
+            content: '';
+        }
+        #cssmenu ul ul .submenu-button:before {
+            top: 18px;
+            right: 22px;
+        }
+        #cssmenu .submenu-button.submenu-opened:before {
+            display: $none;
+        }
+        #cssmenu ul ul li ul {
+            padding: $zero !important;
+            height: $auto;
+            overflow: inherit;
+            overflow-y: inherit;
+        }
+    }
+}

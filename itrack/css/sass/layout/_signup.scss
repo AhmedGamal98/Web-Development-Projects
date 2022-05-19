@@ -1,0 +1,195 @@
+.login,
+.signup,
+.forgot {
+    background: $ofwhite;
+    .box-bg {
+        @include position(fixed, $top: 0px, $left: 0px);
+        @include flex;
+        width: 50%;
+        height: $fullwidth;
+        background: $blue;
+        @media (max-width: 991px) {
+            display: $none;
+        }
+        .inner {
+            min-width: $fullwidth;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            .logo {
+                width: $fullwidth;
+                text-align: center;
+                img {
+                    max-width: 200px;
+                }
+            }
+            .title {
+                color: $white;
+                text-align: center;
+                font-size: 34px;
+                margin-top: $com-spacing-7;
+            }
+        }
+    }
+    .boxform {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin-left: 50%;
+        height: 100vh;
+        padding: $zero 122px;
+        @media (max-width: 1199px) {
+            padding: $zero 60px;
+        }
+        @media (max-width: 991px) {
+            width: $fullwidth;
+            margin: $zero;
+            padding: $com-spacing-6 122px;
+        }
+        @media (max-width:667px) {
+            padding: $com-spacing-6;
+        }
+        .inner {
+            width: $fullwidth;
+        }
+        .back {
+            margin-left: -48px;
+            position: absolute;
+            top: $com-spacing-7;
+            @media (max-width: 991px) {
+                margin: $zero;
+                position: relative;
+                top: $auto;
+            }
+            svg {
+                @include transition(all 0.5s ease-in-out 0s);
+            }
+            &:hover {
+                svg {
+                    fill: $blue;
+                }
+            }
+        }
+        .title {
+            @include title;
+            margin-bottom: $com-spacing-4;
+            &::before {
+                display: $none;
+            }
+        }
+        p.text {
+            text-align: center;
+            margin-bottom: $com-spacing-4;
+        }
+        .field {
+            position: relative;
+            margin-bottom: $com-spacing-4;
+            &:last-child {
+                margin: $zero;
+            }
+            .form-control {
+                @include input;
+            }
+            &.flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .che-box {
+                    @include check-box;
+                    a {
+                        text-decoration: underline;
+                        @include transition(all 0.5s ease-in-out 0s);
+                        &:hover {
+                            color: $blue;
+                            text-decoration: $none;
+                        }
+                    }
+                }
+                .forgetlink {
+                    display: $block;
+                    color: $blak;
+                    @include transition(all 0.5s ease-in-out 0s);
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                color: $blak;
+                a {
+                    color: $blue;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: $none;
+                    }
+                }
+            }
+            .bottom {
+                @include bottom;
+                width: $fullwidth;
+                height: 55px;
+                text-transform: uppercase;
+                @include border-radius(4px);
+            }
+        }
+    }
+    .or {
+        margin: $com-spacing-6 $zero;
+        text-align: center;
+    }
+    .social {
+        @include social;
+        justify-content: center;
+        a {
+            width: 48px;
+            height: 48px;
+            margin: $zero $com-spacing-1 !important;
+            @include prefixer (box-shadow, 0px 0px 40px #0000000f, webkit moz o ms);
+            background: $white;
+            @each $type in $social {
+                &.icon-#{nth($type, 1)} {
+                    background: $white;
+                    svg {
+                        fill: nth($type, 2);
+                    }
+                    &:hover {
+                        background: nth($type, 2);
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.signup {
+    .boxform {
+        display: block;
+        overflow: hidden;
+        overflow-y: scroll;
+        .inner {
+            padding-bottom: $com-spacing-7;
+        }
+        .back {
+            display: block;
+            position: relative;
+            top: $auto;
+            margin-top: $com-spacing-8;
+            @media (max-width: 991px) {
+                margin: $zero;
+            }
+        }
+        .title {
+            @media (max-width: 991px) {
+                margin-top: $com-spacing-7;
+            }
+        }
+    }
+}
+
+//  End signup & login & forget

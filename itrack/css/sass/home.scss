@@ -1,0 +1,272 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import 'layout/header';
+@import 'layout/slider';
+@import 'layout/categories';
+@import 'layout/signup';
+@import 'layout/error404';
+@import 'layout/contactus';
+@import 'layout/aboutus';
+@import 'layout/profile';
+@import 'layout/footer';
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+hr,
+strong,
+b,
+input,
+select,
+textarea,
+.highcharts-title,
+.highcharts-axis-labels,
+.highcharts-yaxis-title {
+    @include reset;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: $ofwhite;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    cursor: pointer;
+}
+
+body {
+    direction: $direction;
+    text-align: $left;
+    background: $white;
+    &.active {
+        overflow: hidden;
+    }
+}
+
+.wizard {
+    @include wizard-style;
+    margin-bottom: $com-spacing-4;
+    @media (max-width: 991px) {
+        display: $none;
+    }
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    border: $zero;
+    margin: $zero;
+    margin-bottom: $com-spacing-4;
+    padding: $com-spacing-4;
+    border-radius: 4px;
+    height: 60px;
+    color: $white;
+    a {
+        text-decoration: underline;
+        color: $white;
+        font-weight: 400;
+        &:hover {
+            text-decoration: $none;
+        }
+    }
+    .text-mass {
+        margin: $zero !important;
+        margin-left: $com-spacing-3 !important;
+    }
+    p {
+        color: $white;
+    }
+    &.alert-success {
+        background: linear-gradient(303.91deg, #1F7A66 7.57%, #60B3A7 94.39%);
+    }
+    &.alert-danger {
+        background: linear-gradient(303.91deg, #C24848 7.57%, #D34A4A 94.39%);
+    }
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    background: $white url(../images/arrow.svg) no-repeat;
+    background-position: 97% 24px;
+    option {
+        padding: $com-spacing-7;
+    }
+}
+
+.pagination {
+    width: $fullwidth;
+    margin-top: $com-spacing-6;
+    justify-content: center;
+    @media (max-width: 991px) {
+        margin-top: $com-spacing-6;
+    }
+    li {
+        display: $inline;
+        margin: $zero 10px;
+        a,
+        span {
+            @include flex;
+            text-align: center;
+            color: $blak;
+            @include border-radius(5px !important);
+            width: 40px;
+            height: 40px;
+            border: $zero;
+            background: $white;
+            color: #093A53;
+            @include transition(all 0.5s ease-in-out 0s);
+            @include prefixer (box-shadow, 4px 4px 30px rgba(0, 0, 0, 0.1), webkit moz o ms);
+        }
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+        &:first-child,
+        &:last-child {
+            a {
+                border: 1px solid $blue;
+            }
+        }
+        &:last-child {
+            svg {
+                transform: rotate(-90deg);
+            }
+        }
+        &:first-child {
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .page-link.active,
+    .page-link:hover {
+        background: $blue !important;
+        color: $white !important;
+        svg {
+            fill: $white;
+        }
+    }
+}
+
+///* End Pagination
+.filterby {
+    @include flex;
+    min-width: 48px;
+    max-width: 48px;
+    height: 48px;
+    background: $white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    @include border-radius(50%);
+    margin-top: $com-spacing-7;
+    cursor: pointer;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    @media (max-width: 991px) {
+        position: fixed;
+        z-index: 100;
+        opacity: 1;
+        left: $com-spacing-4;
+        bottom: $com-spacing-4;
+    }
+    svg,
+    img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+.clos-filter {
+    @include cancel-icon;
+}
+
+.item-inner {
+    margin-top: $com-spacing-2;
+    @media (max-width: 991px) {
+        position: fixed;
+        height: $fullwidth;
+        top: $zero;
+        left: -100%;
+        padding: $zero;
+        z-index: 1001;
+        max-width: 280px;
+        flex: 280px;
+        margin: $zero;
+        @include transition(all 0.5s ease-in-out 0s);
+         ::-webkit-scrollbar {
+            width: 4px;
+        }
+        &.active {
+            left: $zero;
+        }
+    }
+    .inner,
+    .filter {
+        @media (max-width: 991px) {
+            height: $fullwidth;
+            @include border-radius(0px !important);
+            overflow-y: scroll !important;
+        }
+    }
+}
+
+.nonecart {
+    @include flex;
+    padding: $com-spacing-7 $zero;
+    .inner {
+        img {
+            max-width: $fullwidth;
+        }
+        p {
+            @include flex;
+            position: relative;
+            width: 216px;
+            height: 150px;
+            padding: $com-spacing-6;
+            text-align: center;
+            background: #feede0;
+            color: $blue;
+            font-size: 22px;
+            margin-bottom: -16px;
+            line-height: 27px;
+            font-weight: 300;
+            border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+            &::after {
+                content: "";
+                @include position(absolute, $bottom: -10px, $left: 50%);
+                width: 0px;
+                height: 0px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 15px solid #feede0;
+                @include rotate(-20deg);
+            }
+        }
+        .bottom {
+            @include bottom;
+            width: 160px;
+            margin: $zero $auto;
+            margin-top: $com-spacing-7;
+        }
+    }
+}
